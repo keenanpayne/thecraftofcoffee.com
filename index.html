@@ -58,10 +58,13 @@
 
     <header role="banner">
       <nav role="navigation" aria-labelledby="mainnavheader">
+        <!-- On desktop this will be hidden and on mobile this can menu trigger
+             (if I decide that that is an ideal mobile paradigm for this menu) -->
         <h2 id="mainnavheader">Navigation Menu</h2>
 
         <ul role="navigation">
           <li>
+            <!-- Note that we remove the link from the active page for clarity -->
             <span class="active" aria-current="page">Homepage</span>
           </li>
 
@@ -71,6 +74,7 @@
         </ul>
       </nav>
 
+      <!-- Might not be necessary for v1 launch but something to keep in mind -->
       <form>
         <label>Search Craft of Coffee</label>
         <input type="search" placeholder="Search Craft of Coffee">
@@ -79,13 +83,75 @@
 
     <main role="main">
       <section>
-        <h2></h2>
+        <h2>Welcome to craft of coffee</h2>
+
+        <p>This is a description of the website; why it exists, what we do.</p>
+      </section>
+
+      <section>
+        <h2>Learn more about coffee</h2>
+
+        <p>We have lots of resources that you can become more informed about coffee.</p>
+
+        <div>
+          <h3>Coffee basics</h3>
+
+          <p>A description about coffee basics here.</p>
+
+          <!-- This can be a nicely stylized list -->
+          <ul>
+            <li>
+              <a href="" title="">Coffee grinders</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Brewing methods</h3>
+
+          <p>A description about brewing methods here.</p>
+
+          <!-- Should there be a <nav> tag wrapped around this? -->
+          <ul>
+            <li>
+              <a href="" title="">Aeropress</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- To be honest, blog posts likely won't be in the v1 launch but it's important
+           to keep in mind -->
+      <section>
+        <h2>Recent blog posts</h2>
+
+        <p>Visit our blog to learn more: </p>
+
+        <article>
+          <header>
+            <h2>Blog post title</h2>
+            <span>Published date</span>
+          </header>
+
+          <p>Blog post excerpt or description.</p>
+
+          <p>
+            <a href="" title="">Read more...</a>
+          </p>
+
+          <footer>
+            <p>
+              <a href="">Comments</a>
+            </p>
+          </footer>
+        </article>
       </section>
     </main>
 
     <footer role="contentinfo">
       <p>All content is &copy; 2018 by Craft of Coffee</p>
 
+      <!-- On mobile this can just be a stacked list as there will be no dropdowns -->
       <nav role="navigation" aria-label="Footer Navigation">
         <ul role="navigation">
           <li>
