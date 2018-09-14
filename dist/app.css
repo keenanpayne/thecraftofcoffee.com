@@ -14,7 +14,7 @@ a {
 }
 
 a:after {
-  background: rgba(150, 150, 150, .2);
+  background-color: rgba(168, 229, 255, 0.5);
   height: 10px;
   width: 100%;
   content: '';
@@ -23,11 +23,15 @@ a:after {
   top: 55%;
   transform: translateX(-10%);
   transition: all 150ms;
+  z-index: -1;
 }
 
 a:hover:after {
+  background-color: rgba(168, 229, 255, 0.25);
+  box-shadow: 0 0 4px 4px rgba(168, 229, 255, 0.25);
+  height: 100%;
+  top: 0;
   transform: translateX(0);
-  top: 60%;
 }
 
 .logo {
@@ -39,10 +43,12 @@ a:hover:after {
 }
 
 .logo span {
+  color: #A6826D;
   display: block;
-  font-family: 'Playfair Display', serif;
-  font-size: 1.25rem;
+  font-family: 'Vampiro One', cursive;
+  font-size: 1.5rem;
   font-style: italic;
+  font-weight: lighter;
   line-height: 1.5;
 }
 
