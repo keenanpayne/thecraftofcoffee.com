@@ -1,0 +1,80 @@
+:root {
+font-family: 'Lato', sans-serif;
+
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: black;
+  position: relative;
+  text-decoration: none;
+}
+
+a:after {
+  background: rgba(150, 150, 150, .2);
+  height: 10px;
+  width: 100%;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 55%;
+  transform: translateX(-10%);
+  transition: all 150ms;
+}
+
+a:hover:after {
+  transform: translateX(0);
+  top: 60%;
+}
+
+.logo {
+  font-family: 'Bungee Shade', cursive;
+  font-size: 3.5rem;
+  line-height: 1;
+  margin: 60px auto 50px;
+  text-align: center;
+}
+
+.logo span {
+  display: block;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.navigation {
+  border-bottom: 3px solid black;
+  border-top: 3px solid black;
+  text-align: center;
+}
+
+.navigation ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.navigation ul li {
+  display: inline-block;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.navigation ul li:not(:first-of-type) { margin-left: 2rem; }
+
+.navigation > h2 {
+  display: none;
+}
+
+.mission {
+  background: url(../images/background.jpg) no-repeat center center;
+  background-size: cover;
+  color: white;
+  font-size: 2em;
+  text-transform: uppercase;
+  padding: 100px 100px 100px 50px;
+  text-shadow: 1px 2px 0 black;
+}
