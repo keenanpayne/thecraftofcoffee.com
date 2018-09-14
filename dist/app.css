@@ -1,9 +1,31 @@
 :root {
-font-family: 'Lato', sans-serif;
+  /* Variables */
 
+  /* Styles */
+  background: url('../images/body-bg.png') repeat center center; /* Remember that this came from https://outlane.co/now/freebie-coffee-background-pattern/ */
+  background-size: 250px;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  padding: 10px;
+}
+
+@media (min-width: 768px) {
+  :root {
+    font-size: 16px;
+    padding: 50px;
+  }
+}
+
+@media (min-width: 1260px) {
+  :root {
+    font-size: 18px;
+    padding: 50px 100px;
+  }
 }
 
 body {
+  background-color: white;
+  border: 5px solid black;
   margin: 0;
 }
 
@@ -11,10 +33,11 @@ a {
   color: black;
   position: relative;
   text-decoration: none;
+  z-index: 1;
 }
 
 a:after {
-  background-color: rgba(168, 229, 255, 0.5);
+  background-color: rgba(168, 229, 255, .5);
   height: 10px;
   width: 100%;
   content: '';
@@ -27,23 +50,29 @@ a:after {
 }
 
 a:hover:after {
-  background-color: rgba(168, 229, 255, 0.25);
-  box-shadow: 0 0 4px 4px rgba(168, 229, 255, 0.25);
+  background-color: rgba(168, 229, 255, .3);
+  box-shadow: 0 0 5px 5px rgba(168, 229, 255, .3);
   height: 100%;
   top: 0;
   transform: translateX(0);
 }
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1080px;
+}
+
 .logo {
-  font-family: 'Bungee Shade', cursive;
+  font-family: 'Bungee Shade', serif;
   font-size: 3.5rem;
   line-height: 1;
-  margin: 60px auto 50px;
+  margin: 50px auto;
   text-align: center;
 }
 
 .logo span {
-  color: #A6826D;
+  color: #c47c4f;
   display: block;
   font-family: 'Vampiro One', cursive;
   font-size: 1.5rem;
@@ -54,8 +83,12 @@ a:hover:after {
 
 .navigation {
   border-bottom: 3px solid black;
-  border-top: 3px solid black;
   text-align: center;
+}
+
+.navigation.-secondary {
+  border: none;
+  font-size: .875rem;
 }
 
 .navigation ul {
@@ -83,4 +116,9 @@ a:hover:after {
   text-transform: uppercase;
   padding: 100px 100px 100px 50px;
   text-shadow: 1px 2px 0 black;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
 }
