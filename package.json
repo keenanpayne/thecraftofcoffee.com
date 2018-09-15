@@ -1,0 +1,27 @@
+{
+  "name": "craftofcoffee",
+  "private": true,
+  "version": "1.0.0",
+  "description": "The website for The Craft of Coffee",
+  "homepage": "https://thecraftofcoffee.com",
+  "engines": {
+    "node": "<=9.7.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^8.1.0",
+    "cssmin": "^0.4.3",
+    "imagemin": "^5.2.2",
+    "imagemin-pngquant": "^5.1.0",
+    "imagemin-webp": "^4.0.0",
+    "node-sass": "^4.7.2",
+    "postcss-cli": "^5.0.0",
+    "watch": "^1.0.1"
+  },
+  "scripts": {
+    "start": "npm run assets:sass:watch",
+    "build": "npm run assets:images && npm run assets:sass:watch",
+    "assets:sass": "node-sass sass/app.scss dist/app.css | postcss --use autoprefixer < dist/app.css -b \"last 2 versions\" | cssmin > dist/app.min.css",
+    "assets:sass:watch": "watch 'npm run assets:sass' 'sass'",
+    "assets:images": "node utils/images.js"
+  }
+}
