@@ -1,5 +1,5 @@
 :root {
-  background: url("../images/body-bg.png") repeat center center;
+  background: url("../dist/images/body-bg.png") repeat center center;
   /* Remember that this came from https://outlane.co/now/freebie-coffee-background-pattern/ */
   background-size: 250px;
   font-family: 'Lato', sans-serif;
@@ -92,7 +92,7 @@ section {
     font-size: .875rem; }
 
 .mission {
-  background: url("../images/background.jpg") no-repeat center center;
+  background: url("../dist/images/background.jpg") no-repeat center center;
   background-size: cover;
   color: white;
   font-size: 2em;
