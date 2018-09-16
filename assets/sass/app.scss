@@ -58,7 +58,7 @@ a {
 
   &:hover:after {
     background-color: rgba(168, 229, 255, .35);
-    box-shadow: 0 0 5px 5px rgba(168, 229, 255, .35);
+    box-shadow: 0 0 15px 4px rgba(168, 229, 255, .35);
     height: 100%;
     top: 0;
     transform: translateX(0);
@@ -151,6 +151,8 @@ section {
 .mission {
   background: url('../dist/images/background.jpg') no-repeat center center;
   background-size: cover;
+  border-bottom: 5px solid black;
+  border-top: 5px solid black;
   color: white;
   font-size: 2em;
   text-transform: uppercase;
@@ -185,6 +187,7 @@ section {
 // -------------
 
 .siteFooter {
+  border-top: 5px solid black;
   display: flex;
   justify-content: space-between;
   padding-bottom: 25px;
