@@ -19,29 +19,46 @@ $media-min: 768px;
 }
 
 :root {
-  /// Styles
-  background: url('../dist/images/body-bg.png') repeat center center; /* Remember that this came from https://outlane.co/now/freebie-coffee-background-pattern/ */
-  background-size: 250px;
   font-family: 'Lato', sans-serif;
   font-size: 14px;
-  padding: 10px;
+  line-height: 1.5;
 
   @media (min-width: $media-min) {
     font-size: 16px;
-    padding: 50px;
   }
 
   @media (min-width: 1260px) {
     font-size: 18px;
-    padding: 50px 100px;
+  }
+
+  // Skins
+  &.-background-tile {
+    background: url('../dist/images/body-bg.png') repeat center center; /* Remember that this came from https://outlane.co/now/freebie-coffee-background-pattern/ */
+    background-size: 250px;
+    padding: 10px;
+
+    @media (min-width: $media-min) {
+      padding: 50px;
+    }
+
+    @media (min-width: 1260px) {
+      padding: 50px 100px;
+    }
+
+    body {
+      border: 5px solid black;
+      max-width: 1260px;
+    }
+  }
+
+  &.-bordered-wide {
+    border: 5px solid black;
   }
 }
 
 body {
   background-color: white;
-  border: 5px solid black;
   margin: 0 auto;
-  max-width: 1260px;
 }
 
 
@@ -137,10 +154,13 @@ section {
 // ----
 
 .logo {
+  border-bottom: 5px solid black;
   font-family: 'Bungee Shade', serif;
   font-size: 3.5rem;
   line-height: 1;
-  margin: 50px auto;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  margin: 0 auto;
   text-align: center;
 
   span {
@@ -159,6 +179,21 @@ section {
   span:last-of-type {
     margin-bottom: 5px;
     margin-top: 5px;
+  }
+
+  // Modifiers
+  &.-background {
+    background: url('../dist/images/v60.jpg') top center;
+    background-size: cover;
+    color: white;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 0 black;
+    padding-bottom: 40px;
+    padding-top: 35px;
+
+    span {
+      font-size: 1.25rem;
+    }
   }
 }
 
@@ -201,7 +236,6 @@ section {
   background: url('../dist/images/background.jpg') no-repeat center center;
   background-size: cover;
   border-bottom: 5px solid black;
-  border-top: 5px solid black;
   color: white;
   font-size: 2em;
   text-transform: uppercase;
@@ -263,6 +297,50 @@ section {
   margin-right: auto;
   max-width: 500px;
   text-align: center;
+}
+
+.article {
+  img {
+    margin-left: 50px;
+    width: auto;
+    margin: 25px 50px;
+  }
+
+  p {
+    max-width: 65%;
+    margin-left: auto;
+    line-height: 1.5;
+  }
+
+  .homepage-header {
+    max-width: 860px;
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      font-size: 1.25rem;
+      max-width: 85%;
+      margin: 0 auto;
+      color: #202020;
+    }
+  }
+}
+
+.article-content {
+  p {
+    &:first-child:first-letter {
+      float: left;
+      font-family: Georgia;
+      font-size: 5rem;
+      line-height: 1;
+      padding-top: .25rem;
+      padding-right: .75rem;
+      padding-left: .25rem;
+    }
+  }
 }
 
 
