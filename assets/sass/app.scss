@@ -1,11 +1,24 @@
 //
+// Variables
+// ---------
+
+$media-max: 767px;
+$media-min: 768px;
+
+
+//
 // Base
 // ----
 
+* {
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+         screen and (min-resolution: 2dppx) {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
 :root {
-  // Variables
-
-
   /// Styles
   background: url('../dist/images/body-bg.png') repeat center center; /* Remember that this came from https://outlane.co/now/freebie-coffee-background-pattern/ */
   background-size: 250px;
@@ -13,7 +26,7 @@
   font-size: 14px;
   padding: 10px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $media-min) {
     font-size: 16px;
     padding: 50px;
   }
@@ -43,9 +56,9 @@ a {
   z-index: 1;
 
   &:after {
-    background-color: rgba(168, 229, 255, .65);
-    box-shadow: 0 0 2px 2px rgba(168, 229, 255, .65);
-    border-radius: 2px;
+    background-color: rgba(168, 229, 255, .5);
+    box-shadow: 0 0 2px 2px rgba(168, 229, 255, .5);
+    border-radius: 1px;
     height: 4px;
     width: 100%;
     content: '';
@@ -68,6 +81,7 @@ a {
   // Modifiers
   &.-extra {
     &:after {
+      border-radius: 2px;
       height: 8px;
       top: 60%;
       transform: translateX(-10%);
@@ -81,6 +95,23 @@ a {
       transform: translateX(0);
     }
   }
+
+  &.-button {
+    border: 2px solid black;
+    font-weight: 600;
+    padding: .5rem 1rem;
+    transition: background-color 150ms;
+
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+
+    &:before,
+    &:after {
+      display: none;
+    }
+  }
 }
 
 
@@ -89,7 +120,7 @@ a {
 // ------
 
 section {
-  margin-bottom: 75px;
+  margin-bottom: 5rem;
 }
 
 .container {
@@ -177,14 +208,48 @@ section {
   padding: 100px 100px 100px 50px;
   text-shadow: 1px 2px 0 black;
 
-  @media (min-width: 768px) {
+  @media (min-width: $media-min) {
     padding-right: 150px;
   }
 }
 
 .resources {
-  display: flex;
-  justify-content: space-evenly;
+  @media (min-width: $media-min) {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+.brewing {
+  @media (min-width: $media-min) {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.brewing-guide {
+  &:not(:first-of-type) {
+    @media (min-width: $media-min) {
+      margin-left: 3rem;
+    }
+  }
+}
+
+.brewing-link {
+  float: right;
+
+  @media (max-width: $media-max) {
+    margin-bottom: 2rem;
+  }
+}
+
+.brewing-all {
+  margin-top: 2.5rem;
+  text-align: center;
 }
 
 .learning {
@@ -193,9 +258,10 @@ section {
 }
 
 .homepage-header {
+  margin-bottom: 3rem;
   margin-left: auto;
   margin-right: auto;
-  max-width: 560px;
+  max-width: 500px;
   text-align: center;
 }
 
@@ -207,7 +273,16 @@ section {
 .siteFooter {
   border-top: 5px solid black;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   padding-bottom: 25px;
   padding-top: 25px;
+
+  @media (max-width: $media-max) {
+    text-align: center;
+  }
+
+  @media (min-width: $media-min) {
+    flex-direction: row;
+  }
 }

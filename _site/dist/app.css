@@ -1,3 +1,8 @@
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) {
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; } }
+
 :root {
   background: url("../dist/images/body-bg.png") repeat center center;
   /* Remember that this came from https://outlane.co/now/freebie-coffee-background-pattern/ */
@@ -26,9 +31,9 @@ a {
   text-decoration: none;
   z-index: 1; }
   a:after {
-    background-color: rgba(168, 229, 255, 0.65);
-    box-shadow: 0 0 2px 2px rgba(168, 229, 255, 0.65);
-    border-radius: 2px;
+    background-color: rgba(168, 229, 255, 0.5);
+    box-shadow: 0 0 2px 2px rgba(168, 229, 255, 0.5);
+    border-radius: 1px;
     height: 4px;
     width: 100%;
     content: '';
@@ -45,6 +50,7 @@ a {
     top: 0;
     transform: translateX(0); }
   a.-extra:after {
+    border-radius: 2px;
     height: 8px;
     top: 60%;
     transform: translateX(-10%); }
@@ -54,9 +60,19 @@ a {
     height: 100%;
     top: 0;
     transform: translateX(0); }
+  a.-button {
+    border: 2px solid black;
+    font-weight: 600;
+    padding: .5rem 1rem;
+    transition: background-color 150ms; }
+    a.-button:hover {
+      background-color: black;
+      color: white; }
+    a.-button:before, a.-button:after {
+      display: none; }
 
 section {
-  margin-bottom: 75px; }
+  margin-bottom: 5rem; }
 
 .container {
   margin-left: auto;
@@ -116,23 +132,54 @@ section {
     .mission {
       padding-right: 150px; } }
 
-.resources {
-  display: flex;
-  justify-content: space-evenly; }
+@media (min-width: 768px) {
+  .resources {
+    display: flex;
+    justify-content: space-evenly; } }
+
+@media (min-width: 768px) {
+  .brewing {
+    display: flex;
+    justify-content: space-evenly; } }
+
+.brewing img {
+  width: 100%; }
+
+@media (min-width: 768px) {
+  .brewing-guide:not(:first-of-type) {
+    margin-left: 3rem; } }
+
+.brewing-link {
+  float: right; }
+  @media (max-width: 767px) {
+    .brewing-link {
+      margin-bottom: 2rem; } }
+
+.brewing-all {
+  margin-top: 2.5rem;
+  text-align: center; }
 
 .learning {
   display: flex;
   justify-content: space-evenly; }
 
 .homepage-header {
+  margin-bottom: 3rem;
   margin-left: auto;
   margin-right: auto;
-  max-width: 560px;
+  max-width: 500px;
   text-align: center; }
 
 .siteFooter {
   border-top: 5px solid black;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   padding-bottom: 25px;
   padding-top: 25px; }
+  @media (max-width: 767px) {
+    .siteFooter {
+      text-align: center; } }
+  @media (min-width: 768px) {
+    .siteFooter {
+      flex-direction: row; } }
