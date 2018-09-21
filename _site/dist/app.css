@@ -192,25 +192,41 @@ section {
   text-align: center; }
 
 .article img {
-  margin-left: 50px;
-  width: auto;
-  margin: 25px 50px; }
+  max-width: 100%;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  width: auto; }
+  @media (min-width: 768px) {
+    .article img {
+      padding-bottom: 2rem;
+      padding-top: 2rem; } }
 
-.article p {
-  max-width: 65%;
+.article-header {
+  margin-bottom: 50px;
   margin-left: auto;
-  line-height: 1.5; }
+  margin-right: auto;
+  max-width: 800px;
+  text-align: center; }
 
-.article .homepage-header {
-  max-width: 860px; }
-  .article .homepage-header h1 {
-    font-size: 3rem;
-    margin-bottom: 1.5rem; }
-  .article .homepage-header p {
-    font-size: 1.25rem;
-    max-width: 85%;
-    margin: 0 auto;
-    color: #202020; }
+.article-title {
+  font-size: 3rem;
+  margin-bottom: 1.5rem; }
+
+.article-lead {
+  color: #202020;
+  font-size: 1.25rem;
+  margin: 0 auto;
+  color: #202020; }
+
+.article-author {
+  color: #555;
+  font-size: .875rem;
+  font-style: italic; }
+
+@media (min-width: 768px) {
+  .article-content p {
+    margin-left: auto;
+    max-width: 65%; } }
 
 .article-content p:first-child:first-letter {
   float: left;
@@ -220,6 +236,13 @@ section {
   padding-top: .25rem;
   padding-right: .75rem;
   padding-left: .25rem; }
+
+.article-updated {
+  font-style: italic;
+  font-size: .875rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  text-align: right; }
 
 .siteFooter {
   border-top: 5px solid black;

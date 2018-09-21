@@ -1,6 +1,7 @@
 ---
+tags: post
 layout: default
-title: My Rad Blog
+title: "My Rad Blog"
 ---
 
 # My Rad Markdown Blog Post

@@ -25,9 +25,9 @@
 <meta property="og:url" content="">
 <meta property="og:image" content="">
 
-<title>My Rad Blog</title>
+<title>Resources &middot; The Craft of Coffee</title>
 
-<link rel="canonical" href="http://keenanpayne.com/index.html">
+<link rel="canonical" href="">
 
 <link rel="apple-touch-icon" sizes="57x57" href="">
 <link rel="apple-touch-icon" sizes="60x60" href="">
@@ -55,31 +55,96 @@
 <body>
   <header role="banner">
   <nav class="navigation" role="navigation" aria-labelledby="mainnavheader">
-    <!-- On desktop this will be hidden and on mobile this can menu trigger
-         (if I decide that that is an ideal mobile paradigm for this menu) -->
-    <h2 id="mainnavheader">Navigation Menu</h2>
+  <!-- On desktop this will be hidden and on mobile this can menu trigger
+       (if I decide that that is an ideal mobile paradigm for this menu) -->
+  <h2 id="mainnavheader">Navigation Menu</h2>
 
-    <ul role="navigation">
-      <li>
-        <!-- Note that we remove the link from the active page for clarity
-             <span class="active" aria-current="page">[Link]</span> -->
-        <a href="/" title="" class="-extra">Homepage</a>
-      </li>
+  <ul role="navigation"><li>
+        <!-- Create a link if it is not the active -->
+        
+          <a href="/" title="Home" class="-extra">
+        
+          Home
 
-      <li>
-        <a href="" title="" class="-extra">Learning</a>
-      </li>
-    </ul>
-  </nav>
+        
+          </a>
+        
+      </li><li>
+        <!-- Create a link if it is not the active -->
+        
+          Resources
 
-  <!-- TODO: figure out how to pass a parameter into partials --> 
-<h1 class="logo"><span>The</span> Craft <span>of</span> Coffee</h1>
+        
+      </li><li>
+        <!-- Create a link if it is not the active -->
+        
+          <a href="/blog/" title="Blog" class="-extra">
+        
+          Blog
+
+        
+          </a>
+        
+      </li></ul>
+</nav>
+
+
+  <!-- TODO: figure out how to pass a parameter into partials -->
+<h1 class="logo ">
+  <span>The</span> Craft <span>of</span> Coffee
+</h1>
 
 </header>
 
 
   <main role="main">
-  <h1>My Rad Markdown Blog Post</h1>
+  
+<!-- NOTE: This section can be used on the Resources page as well -->
+<section class="container">
+  <header class="homepage-header">
+    <h2>Resources</h2>
+
+    <p>Describe this list of cool resources that <em>aren't</em> this website that can help you learn more about coffee.</p>
+  </header>
+
+  <div class="resources">
+    <div>
+      <h3>Books</h3>
+
+      <p>A description about books here.</p>
+
+      <ul>
+        <li>
+          <a href="" title="">Book title</a>
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>Magazines</h3>
+
+      <p>A description about magazine here.</p>
+
+      <ul>
+        <li>
+          <a href="" title="">Magazine name</a>
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>Websites</h3>
+
+      <p>A description about websites here.</p>
+
+      <ul>
+        <li>
+          <a href="" title="">Website name</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
 
 </main>
 

@@ -1,0 +1,15 @@
+---
+tags: mainnavigation
+layout: default
+title: "Blog"
+---
+
+<ul>
+  {%- for post in collections.post -%}
+    <li>
+      <a href="{{ post.url }}" title="{{ post.data.title }}">
+        {{ post.data.title }}
+      </a>
+    </li>
+  {%- endfor -%}
+</ul>

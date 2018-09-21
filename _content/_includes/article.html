@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<article class="article container">
+  <header class="article-header">
+    <h1 class="article-title">
+      {{ title }}
+    </h1>
+
+    {% if lead %}
+      <p class="article-lead">
+        {{ lead }}
+      </p>
+    {% endif %}
+
+    <p class="article-author">
+      By {{ author }} |
+      {% if read_time %}
+        {{ read_time }} read
+      {% endif %}
+    </p>
+  </header>
+
+  <div class="article-content">
+    {{ content | safe }}
+  </div>
+
+  <p class="article-updated">Last updated on September 20, 2018 at 2:34pm</p>
+</article>
