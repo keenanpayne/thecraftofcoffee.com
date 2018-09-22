@@ -1,6 +1,5 @@
 ---
 tags: post
-layout: default
 title: "My Rad Blog"
 ---
 
