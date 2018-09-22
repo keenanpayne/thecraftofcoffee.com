@@ -89,8 +89,9 @@
 </nav>
 
 
-  <!-- TODO: figure out how to pass a parameter into partials -->
-<h1 class="logo ">
+  <!-- TODO: figure out how to pass a parameter into partials
+           so that we can add modifiers to components -->
+<h1 class="logo">
   <span>The</span> Craft <span>of</span> Coffee
 </h1>
 
@@ -112,17 +113,36 @@
   <p>All content is &copy; 2018 by Craft of Coffee</p>
 
   <!-- On mobile this can just be a stacked list as there will be no dropdowns -->
-  <nav class="navigation -secondary" role="navigation" aria-label="Footer Navigation">
-    <ul role="navigation">
-      <li>
-        <span class="active">Homepage</span>
-      </li>
+<nav class="navigation -secondary" role="navigation" aria-label="Footer navigation">
+  <ul role="navigation"><li>
+        <!-- Create a link if it is not the active -->
+        
+          <a href="/" title="Home">
+        
+          Home
 
-      <li>
-        <a href="" title="" class="active">Learning</a>
-      </li>
-    </ul>
-  </nav>
+        
+          </a>
+        
+      </li><li>
+        <!-- Create a link if it is not the active -->
+        
+          <a href="/resources/" title="Resources">
+        
+          Resources
+
+        
+          </a>
+        
+      </li><li>
+        <!-- Create a link if it is not the active -->
+        
+          Blog
+
+        
+      </li></ul>
+</nav>
+
 </footer>
 
 </body>
