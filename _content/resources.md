@@ -1,5 +1,8 @@
 ---
 tags: mainnavigation
-layout: resources
+layout: page
 title: "Resources"
+
+sections:
+  - resources
 ---

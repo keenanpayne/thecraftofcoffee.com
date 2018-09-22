@@ -1,5 +1,8 @@
 ---
 tags: mainnavigation
-layout: blog
+layout: page
 title: "Blog"
+
+sections:
+  - blog-articles
 ---
