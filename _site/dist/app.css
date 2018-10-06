@@ -34,28 +34,35 @@ body {
 a {
   color: black;
   display: inline-block;
-  position: relative;
-  text-decoration: none;
-  z-index: 1; }
-  a:after {
-    background-color: rgba(168, 229, 255, 0.5);
-    box-shadow: 0 0 2px 2px rgba(168, 229, 255, 0.5);
-    border-radius: 1px;
-    height: 1px;
-    width: 100%;
-    content: '';
-    display: block;
-    position: absolute;
-    top: 90%;
-    transform: translateX(-5%);
-    transition: all 150ms;
-    z-index: -1; }
-  a:hover:after {
-    background-color: rgba(168, 229, 255, 0.25);
-    box-shadow: 0 0 5px 3px rgba(168, 229, 255, 0.25);
-    height: 100%;
-    top: 0;
-    transform: translateX(0); }
+  text-decoration: none; }
+  a.-underline, p a,
+  li a {
+    color: black;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    z-index: 1; }
+    a.-underline:after, p a:after,
+    li a:after {
+      background-color: rgba(168, 229, 255, 0.5);
+      box-shadow: 0 0 2px 2px rgba(168, 229, 255, 0.5);
+      border-radius: 1px;
+      height: 1px;
+      width: 100%;
+      content: '';
+      display: block;
+      position: absolute;
+      top: 90%;
+      transform: translateX(-5%);
+      transition: all 150ms;
+      z-index: -1; }
+    a.-underline:hover:after, p a:hover:after,
+    li a:hover:after {
+      background-color: rgba(168, 229, 255, 0.25);
+      box-shadow: 0 0 5px 3px rgba(168, 229, 255, 0.25);
+      height: 100%;
+      top: 0;
+      transform: translateX(0); }
   a.-extra:after {
     border-radius: 2px;
     height: 8px;
@@ -248,7 +255,10 @@ section {
   margin-top: 2rem;
   text-align: right; }
 
-.siteFooter {
+.g-header {
+  margin-bottom: 5rem; }
+
+.g-footer {
   border-top: 5px solid black;
   display: flex;
   flex-direction: column;
@@ -256,8 +266,8 @@ section {
   padding-bottom: 25px;
   padding-top: 25px; }
   @media (max-width: 767px) {
-    .siteFooter {
+    .g-footer {
       text-align: center; } }
   @media (min-width: 768px) {
-    .siteFooter {
+    .g-footer {
       flex-direction: row; } }

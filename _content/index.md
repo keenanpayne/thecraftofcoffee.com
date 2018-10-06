@@ -4,7 +4,6 @@ layout: page
 title: "Home"
 
 sections:
-  - mission
   - learning
   - brewing-guides
   - resources

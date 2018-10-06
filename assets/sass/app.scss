@@ -65,34 +65,47 @@ body {
 a {
   color: black;
   display: inline-block;
-  position: relative;
   text-decoration: none;
-  z-index: 1;
 
-  &:after {
-    background-color: rgba(168, 229, 255, .5);
-    box-shadow: 0 0 2px 2px rgba(168, 229, 255, .5);
-    border-radius: 1px;
-    height: 1px;
-    width: 100%;
-    content: '';
-    display: block;
-    position: absolute;
-    top: 90%;
-    transform: translateX(-5%);
-    transition: all 150ms;
-    z-index: -1;
+  // Underline
+  &.-underline {
+    color: black;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    z-index: 1;
+
+    &:after {
+      background-color: rgba(168, 229, 255, .5);
+      box-shadow: 0 0 2px 2px rgba(168, 229, 255, .5);
+      border-radius: 1px;
+      height: 1px;
+      width: 100%;
+      content: '';
+      display: block;
+      position: absolute;
+      top: 90%;
+      transform: translateX(-5%);
+      transition: all 150ms;
+      z-index: -1;
+    }
+
+    &:hover:after {
+      background-color: rgba(168, 229, 255, .25);
+      box-shadow: 0 0 5px 3px rgba(168, 229, 255, .25);
+      height: 100%;
+      top: 0;
+      transform: translateX(0);
+    }
   }
 
-  &:hover:after {
-    background-color: rgba(168, 229, 255, .25);
-    box-shadow: 0 0 5px 3px rgba(168, 229, 255, .25);
-    height: 100%;
-    top: 0;
-    transform: translateX(0);
+  // Always use underlines when links are nested inside certain elements
+  p &,
+  li & {
+    @extend a.-underline;
   }
 
-  // Modifiers
+  // Extra large underline
   &.-extra {
     &:after {
       border-radius: 2px;
@@ -110,6 +123,7 @@ a {
     }
   }
 
+  // Faux button
   &.-button {
     border: 2px solid black;
     font-weight: 600;
@@ -381,10 +395,18 @@ section {
 
 
 //
+// Global Header
+// -------------
+.g-header {
+  margin-bottom: 5rem;
+}
+
+
+//
 // Global Footer
 // -------------
 
-.siteFooter {
+.g-footer {
   border-top: 5px solid black;
   display: flex;
   flex-direction: column;

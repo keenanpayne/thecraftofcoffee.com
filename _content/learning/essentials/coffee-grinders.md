@@ -66,7 +66,7 @@ But beware, not all coffee grinders are created equal, and I would advise agains
 <figure>
   <img src="https://images.unsplash.com/photo-1496282808562-d01e97fac01c?ixlib=rb-0.3.5&s=a5ad9c39a6ec7be119c2b7c09cc5469f&auto=format&fit=crop&w=934&q=80" alt="Alt text" title="Title text" />
 
-  <figcaption>Photo by <a href="" title="" nofollow>Nathan Dumlao</a></figcaption>
+  <figcaption>Photo by <a href="https://unsplash.com/photos/vrgJNOSj4Eo" title="" nofollow>Nathan Dumlao</a></figcaption>
 </figure>
 
 
