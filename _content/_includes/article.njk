@@ -14,12 +14,14 @@ layout: default
       </p>
     {% endif %}
 
-    <p class="article-author">
-      By {{ author }} |
-      {% if read_time %}
-        {{ read_time }} read
-      {% endif %}
-    </p>
+    {% if author or read_time %}
+      <p class="article-author">
+        By {{ author }}
+        {% if read_time %}
+          {{ read_time }} | read
+        {% endif %}
+      </p>
+    {% endif %}
   </header>
 
   <div class="article-content">

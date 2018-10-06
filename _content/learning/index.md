@@ -1,7 +1,7 @@
 ---
 tags: mainnavigation
 layout: page
-title: "Resources"
+title: "Learning"
 
 sections:
   - resources
