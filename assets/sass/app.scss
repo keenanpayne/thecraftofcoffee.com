@@ -20,12 +20,8 @@ $media-min: 768px;
 
 :root {
   font-family: 'Lato', sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-
-  @media (min-width: $media-min) {
-    font-size: 16px;
-  }
+  font-size: 16px;
+  line-height: 1.55;
 
   @media (min-width: 1260px) {
     font-size: 18px;
@@ -68,6 +64,7 @@ body {
 
 a {
   color: black;
+  display: inline-block;
   position: relative;
   text-decoration: none;
   z-index: 1;
@@ -76,12 +73,12 @@ a {
     background-color: rgba(168, 229, 255, .5);
     box-shadow: 0 0 2px 2px rgba(168, 229, 255, .5);
     border-radius: 1px;
-    height: 4px;
+    height: 1px;
     width: 100%;
     content: '';
     display: block;
     position: absolute;
-    top: 75%;
+    top: 90%;
     transform: translateX(-5%);
     transition: all 150ms;
     z-index: -1;
@@ -128,6 +125,17 @@ a {
     &:after {
       display: none;
     }
+  }
+}
+
+
+//
+// Lists
+// -----
+
+li {
+  &:not(:first-of-type) {
+    margin-top: .55rem;
   }
 }
 
@@ -300,16 +308,22 @@ section {
 }
 
 .article {
+  figure {
+    @media (min-width: $media-min) {
+      margin-left: -10rem;
+    }
+  }
+
+  figcaption {
+    color: #666;
+    font-size: .875rem;
+    font-style: italic;
+    text-align: right;
+  }
+
   img {
     max-width: 100%;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
     width: auto;
-
-    @media (min-width: $media-min) {
-      padding-bottom: 2rem;
-      padding-top: 2rem;
-    }
   }
 }
 
@@ -342,7 +356,7 @@ section {
 .article-content {
   margin-left: auto;
   margin-right: auto;
-  max-width: 65%;
+  max-width: 768px;
 
   p {
     &:first-child:first-letter {

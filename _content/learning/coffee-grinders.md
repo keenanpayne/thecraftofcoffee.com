@@ -63,11 +63,16 @@ But beware, not all coffee grinders are created equal, and I would advise agains
 
 ## Types of coffee grinders
 
+<figure>
+  <img src="https://images.unsplash.com/photo-1496282808562-d01e97fac01c?ixlib=rb-0.3.5&s=a5ad9c39a6ec7be119c2b7c09cc5469f&auto=format&fit=crop&w=934&q=80" alt="Alt text" title="Title text" />
+
+  <figcaption>Photo by <a href="" title="" nofollow>Nathan Dumlao</a></figcaption>
+</figure>
+
+
 ### Blade grinder
 
 A blade coffee grinder is a grinder where the coffee beans and the blade that grinds the beans share the same space. Coffee is generally poured into the coffee grinder on top of a blade that sits at the bottom. There is usually a button that is pressed that spins the blade which grinds the coffee. It is the most straightforward grinder to operate because the only option is to push down which spins the blade. There is no speed adjustment or grind size selection.
-
-**[insert image]**
 
 Although blade grinders are the most affordable option, they also produce the lowest quality coffee out of all home grinders. They are even capable of producing worse coffee than just purchasing your coffee pre-ground or using an in-store grinder 😱.
 
