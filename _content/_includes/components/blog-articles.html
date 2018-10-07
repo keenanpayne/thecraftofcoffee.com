@@ -1,9 +1,23 @@
-<ul>
-  {%- for post in collections.post -%}
-    <li>
-      <a href="{{ post.url }}" title="{{ post.data.title }}">
-        {{ post.data.title }}
-      </a>
-    </li>
-  {%- endfor -%}
-</ul>
+<div class="container">
+  <div class="articles">
+    <h1 class="articles-header">Blog</h1>
+
+    {%- for post in collections.post -%}
+      <article>
+        <h2 class="articles-desc-header">
+          <a href="{{ post.url }}" title="{{ post.data.title }}">
+            {{ post.data.title }}
+          </a>
+        </h2>
+
+        <p class="article-date">
+          By {{ post.data.author }} on {{ post.date }}
+        </p>
+      </article>
+
+      {% if not loop.first %}
+        <hr>
+      {% endif %}
+    {%- endfor -%}
+  </div>
+</div>

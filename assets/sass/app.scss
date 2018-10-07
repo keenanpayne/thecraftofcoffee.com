@@ -79,13 +79,13 @@ a {
       background-color: rgba(168, 229, 255, .5);
       box-shadow: 0 0 2px 2px rgba(168, 229, 255, .5);
       border-radius: 1px;
-      height: 1px;
+      height: .175em;
       width: 100%;
       content: '';
       display: block;
       position: absolute;
-      top: 90%;
-      transform: translateX(-5%);
+      top: 75%;
+      transform: translateX(-.25em);
       transition: all 150ms;
       z-index: -1;
     }
@@ -103,24 +103,6 @@ a {
   p &,
   li & {
     @extend a.-underline;
-  }
-
-  // Extra large underline
-  &.-extra {
-    &:after {
-      border-radius: 2px;
-      height: 8px;
-      top: 60%;
-      transform: translateX(-10%);
-    }
-
-    &:hover:after {
-      background-color: rgba(168, 229, 255, .35);
-      box-shadow: 0 0 5px 5px rgba(168, 229, 255, .35);
-      height: 100%;
-      top: 0;
-      transform: translateX(0);
-    }
   }
 
   // Faux button
@@ -165,9 +147,14 @@ section {
 .container {
   margin-left: auto;
   margin-right: auto;
-  max-width: 1440px;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1260px;
+  margin-left: 25px;
+  margin-right: 25px;
+
+  @media (min-width: $media-min) {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
 }
 
 
@@ -421,4 +408,32 @@ section {
   @media (min-width: $media-min) {
     flex-direction: row;
   }
+}
+
+
+//
+// Blog
+// ----
+
+.articles {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 768px;
+}
+
+.articles-header {
+  margin-top: 0;
+  text-align: center;
+}
+
+.articles-desc-header {
+  margin-bottom: 1rem;
+}
+
+.article-date {
+  color: #666;
+  font-size: .875rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+  margin-top: 0;
 }

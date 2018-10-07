@@ -1,5 +1,5 @@
 ---
-tags:
+tags: post
 title: Coffee Grinders
 author: Keenan Payne
 ---
