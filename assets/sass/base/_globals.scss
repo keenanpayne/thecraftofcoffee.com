@@ -11,16 +11,8 @@
   }
 }
 
-// Base layout and type styles
+// Base layout
 :root {
-  font-family: 'Lato', sans-serif;
-  font-size: 16px;
-  line-height: 1.55;
-
-  @media (min-width: 1260px) {
-    font-size: 18px;
-  }
-
   // Skins
   &.-background-tile {
     background: url('../dist/images/body-bg.png') repeat center center; /* Remember that this came from https://outlane.co/now/freebie-coffee-background-pattern/ */

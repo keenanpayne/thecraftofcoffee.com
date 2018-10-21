@@ -3,29 +3,23 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; } }
 
-:root {
-  font-family: 'Lato', sans-serif;
-  font-size: 16px;
-  line-height: 1.55; }
+:root.-background-tile {
+  background: url("../dist/images/body-bg.png") repeat center center;
+  /* Remember that this came from https://outlane.co/now/freebie-coffee-background-pattern/ */
+  background-size: 250px;
+  padding: 10px; }
+  @media (min-width: 768px) {
+    :root.-background-tile {
+      padding: 50px; } }
   @media (min-width: 1260px) {
-    :root {
-      font-size: 18px; } }
-  :root.-background-tile {
-    background: url("../dist/images/body-bg.png") repeat center center;
-    /* Remember that this came from https://outlane.co/now/freebie-coffee-background-pattern/ */
-    background-size: 250px;
-    padding: 10px; }
-    @media (min-width: 768px) {
-      :root.-background-tile {
-        padding: 50px; } }
-    @media (min-width: 1260px) {
-      :root.-background-tile {
-        padding: 50px 100px; } }
-    :root.-background-tile body {
-      border: 5px solid black;
-      max-width: 1260px; }
-  :root.-bordered-wide {
-    border: 5px solid black; }
+    :root.-background-tile {
+      padding: 50px 100px; } }
+  :root.-background-tile body {
+    border: 5px solid black;
+    max-width: 1260px; }
+
+:root.-bordered-wide {
+  border: 5px solid black; }
 
 body {
   background-color: white;
@@ -74,8 +68,56 @@ a {
     a.-button:before, a.-button:after {
       display: none; }
 
+ul {
+  padding-left: 0; }
+
 li:not(:first-of-type) {
   margin-top: .55rem; }
+
+:root {
+  font-size: 14px; }
+  @media (min-width: 768px) {
+    :root {
+      font-size: 16px; } }
+  @media (min-width: 1440px) {
+    :root {
+      font-size: 18px; } }
+
+body {
+  color: #333;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  line-height: 1.5; }
+
+p {
+  font-size: 1.15rem;
+  margin-bottom: 1.3rem; }
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 1.414rem 0 0.5rem;
+  font-weight: inherit;
+  line-height: 1.2; }
+
+h1 {
+  margin-top: 0;
+  font-size: 3.175rem; }
+
+h2 {
+  font-size: 2.369rem; }
+
+h3 {
+  font-size: 1.777rem;
+  font-variant: all-small-caps;
+  font-weight: 600; }
+
+h4 {
+  font-size: 1.333rem; }
+
+small {
+  font-size: 0.75rem; }
 
 .g-footer {
   border-top: 5px solid black;
@@ -264,5 +306,4 @@ section {
       .navigation ul li:not(:first-of-type) {
         margin-left: 2rem; }
   .navigation.-secondary {
-    border: none;
-    font-size: .875rem; }
+    border: none; }
