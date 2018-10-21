@@ -1,0 +1,52 @@
+//
+// Globals
+// =============================================================================
+
+// Anti-alias text on Retina/high DPI devices
+* {
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+         screen and (min-resolution: 2dppx) {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+// Base layout and type styles
+:root {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 1.55;
+
+  @media (min-width: 1260px) {
+    font-size: 18px;
+  }
+
+  // Skins
+  &.-background-tile {
+    background: url('../dist/images/body-bg.png') repeat center center; /* Remember that this came from https://outlane.co/now/freebie-coffee-background-pattern/ */
+    background-size: 250px;
+    padding: 10px;
+
+    @media (min-width: $media-min) {
+      padding: 50px;
+    }
+
+    @media (min-width: 1260px) {
+      padding: 50px 100px;
+    }
+
+    body {
+      border: 5px solid black;
+      max-width: 1260px;
+    }
+  }
+
+  &.-bordered-wide {
+    border: 5px solid black;
+  }
+}
+
+body {
+  background-color: white;
+  margin: 0 auto;
+}

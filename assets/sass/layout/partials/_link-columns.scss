@@ -1,0 +1,10 @@
+//
+// Link Columns
+// =============================================================================
+
+.linkColumns {
+  @media (min-width: $media-min) {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}

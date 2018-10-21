@@ -77,6 +77,20 @@ a {
 li:not(:first-of-type) {
   margin-top: .55rem; }
 
+.g-footer {
+  border-top: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 25px;
+  padding-top: 25px; }
+  @media (max-width: 767px) {
+    .g-footer {
+      text-align: center; } }
+  @media (min-width: 768px) {
+    .g-footer {
+      flex-direction: row; } }
+
 section {
   margin-bottom: 5rem; }
 
@@ -84,80 +98,15 @@ section {
   margin-left: auto;
   margin-right: auto;
   max-width: 1260px;
-  margin-left: 25px;
-  margin-right: 25px; }
+  padding-left: 25px;
+  padding-right: 25px; }
   @media (min-width: 768px) {
     .container {
-      margin-left: 50px;
-      margin-right: 50px; } }
+      padding-left: 50px;
+      padding-right: 50px; } }
 
-.logo {
-  border-bottom: 5px solid black;
-  font-family: 'Bungee Shade', serif;
-  font-size: 3.5rem;
-  line-height: 1;
-  padding-bottom: 50px;
-  padding-top: 50px;
-  margin: 0 auto;
-  text-align: center; }
-  .logo span {
-    color: #c47c4f;
-    display: block;
-    font-family: 'Vampiro One', cursive;
-    font-size: 1.5rem;
-    font-style: italic;
-    font-weight: lighter; }
-  .logo span:first-of-type {
-    margin-bottom: 5px; }
-  .logo span:last-of-type {
-    margin-bottom: 5px;
-    margin-top: 5px; }
-  .logo.-background {
-    background: url("../dist/images/v60.jpg") top center;
-    background-size: cover;
-    color: white;
-    font-size: 2.5rem;
-    text-shadow: 1px 1px 0 black;
-    padding-bottom: 40px;
-    padding-top: 35px; }
-    .logo.-background span {
-      font-size: 1.25rem; }
-
-.navigation {
-  border-bottom: 5px solid black;
-  text-align: center; }
-  .navigation > h2 {
-    display: none; }
-  .navigation ul {
-    list-style-type: none;
-    padding-left: 0; }
-    .navigation ul li {
-      display: inline-block;
-      font-weight: 900;
-      text-transform: uppercase; }
-      .navigation ul li:not(:first-of-type) {
-        margin-left: 2rem; }
-  .navigation.-secondary {
-    border: none;
-    font-size: .875rem; }
-
-.mission {
-  background: url("../dist/images/background.jpg") no-repeat center center;
-  background-size: cover;
-  border-bottom: 5px solid black;
-  color: white;
-  font-size: 2em;
-  text-transform: uppercase;
-  padding: 100px 100px 100px 50px;
-  text-shadow: 1px 2px 0 black; }
-  @media (min-width: 768px) {
-    .mission {
-      padding-right: 150px; } }
-
-@media (min-width: 768px) {
-  .resources {
-    display: flex;
-    justify-content: space-evenly; } }
+.g-header {
+  margin-bottom: 5rem; }
 
 @media (min-width: 768px) {
   .brewing {
@@ -181,11 +130,12 @@ section {
   margin-top: 2.5rem;
   text-align: center; }
 
-.learning {
-  display: flex;
-  justify-content: space-evenly; }
+@media (min-width: 768px) {
+  .linkColumns {
+    display: flex;
+    justify-content: space-evenly; } }
 
-.homepage-header {
+.sectionHeader {
   margin-bottom: 3rem;
   margin-left: auto;
   margin-right: auto;
@@ -248,23 +198,6 @@ section {
   margin-top: 2rem;
   text-align: right; }
 
-.g-header {
-  margin-bottom: 5rem; }
-
-.g-footer {
-  border-top: 5px solid black;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-bottom: 25px;
-  padding-top: 25px; }
-  @media (max-width: 767px) {
-    .g-footer {
-      text-align: center; } }
-  @media (min-width: 768px) {
-    .g-footer {
-      flex-direction: row; } }
-
 .articles {
   margin-left: auto;
   margin-right: auto;
@@ -283,3 +216,53 @@ section {
   font-style: italic;
   margin-bottom: 1rem;
   margin-top: 0; }
+
+.logo {
+  border-bottom: 5px solid black;
+  font-family: 'Bungee Shade', serif;
+  font-size: 3.5rem;
+  line-height: 1;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  margin: 0 auto;
+  text-align: center; }
+  .logo span {
+    color: #c47c4f;
+    display: block;
+    font-family: 'Vampiro One', cursive;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: lighter; }
+  .logo span:first-of-type {
+    margin-bottom: 5px; }
+  .logo span:last-of-type {
+    margin-bottom: 5px;
+    margin-top: 5px; }
+  .logo.-background {
+    background: url("../dist/images/v60.jpg") top center;
+    background-size: cover;
+    color: white;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 0 black;
+    padding-bottom: 40px;
+    padding-top: 35px; }
+    .logo.-background span {
+      font-size: 1.25rem; }
+
+.navigation {
+  border-bottom: 5px solid black;
+  text-align: center; }
+  .navigation > h2 {
+    display: none; }
+  .navigation ul {
+    list-style-type: none;
+    padding-left: 0; }
+    .navigation ul li {
+      display: inline-block;
+      font-weight: 900;
+      text-transform: uppercase; }
+      .navigation ul li:not(:first-of-type) {
+        margin-left: 2rem; }
+  .navigation.-secondary {
+    border: none;
+    font-size: .875rem; }

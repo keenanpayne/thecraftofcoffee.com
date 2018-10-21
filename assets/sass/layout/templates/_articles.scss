@@ -1,0 +1,103 @@
+//
+// Articles
+// =============================================================================
+
+.article {
+  figure {
+    @media (min-width: $media-min) {
+      margin-left: -10rem;
+    }
+  }
+
+  figcaption {
+    color: #666;
+    font-size: .875rem;
+    font-style: italic;
+    text-align: right;
+  }
+
+  img {
+    max-width: 100%;
+    width: auto;
+  }
+}
+
+.article-header {
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+.article-title {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.article-lead {
+  color: #202020;
+  font-size: 1.25rem;
+  margin: 0 auto;
+  color: #202020;
+}
+
+.article-author {
+  color: #555;
+  font-size: .875rem;
+  font-style: italic;
+}
+
+.article-content {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 768px;
+
+  p {
+    &:first-child:first-letter {
+      float: left;
+      font-size: 5rem;
+      font-weight: bold;
+      line-height: 1;
+      padding-top: .25rem;
+      padding-right: .75rem;
+      padding-left: .25rem;
+    }
+  }
+}
+
+.article-updated {
+  font-style: italic;
+  font-size: .875rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  text-align: right;
+}
+
+
+//
+// Blog
+// ----
+
+.articles {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 768px;
+}
+
+.articles-header {
+  margin-top: 0;
+  text-align: center;
+}
+
+.articles-desc-header {
+  margin-bottom: 1rem;
+}
+
+.article-date {
+  color: #666;
+  font-size: .875rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+  margin-top: 0;
+}

@@ -1,0 +1,35 @@
+//
+// Brewing Guides
+// =============================================================================
+
+.brewing {
+  @media (min-width: $media-min) {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.brewing-guide {
+  &:not(:first-of-type) {
+    @media (min-width: $media-min) {
+      margin-left: 3rem;
+    }
+  }
+}
+
+.brewing-link {
+  float: right;
+
+  @media (max-width: $media-max) {
+    margin-bottom: 2rem;
+  }
+}
+
+.brewing-all {
+  margin-top: 2.5rem;
+  text-align: center;
+}
