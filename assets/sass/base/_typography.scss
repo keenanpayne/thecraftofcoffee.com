@@ -5,7 +5,7 @@
 :root {
   font-size: 14px;
 
-  @media (min-width: $media-min) {
+  @media (min-width: $media-max-768) {
     font-size: 16px;
   }
 

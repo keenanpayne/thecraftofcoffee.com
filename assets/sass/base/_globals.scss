@@ -19,7 +19,7 @@
     background-size: 250px;
     padding: 10px;
 
-    @media (min-width: $media-min) {
+    @media (min-width: $media-max-768) {
       padding: 50px;
     }
 

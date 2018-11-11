@@ -3,7 +3,7 @@
 // =============================================================================
 
 .brewing {
-  @media (min-width: $media-min) {
+  @media (min-width: $media-max-768) {
     display: flex;
     justify-content: space-evenly;
   }
@@ -15,7 +15,7 @@
 
 .brewing-guide {
   &:not(:first-of-type) {
-    @media (min-width: $media-min) {
+    @media (min-width: $media-max-768) {
       margin-left: 3rem;
     }
   }
@@ -24,7 +24,7 @@
 .brewing-link {
   float: right;
 
-  @media (max-width: $media-max) {
+  @media (max-width: $media-max-767) {
     margin-bottom: 2rem;
   }
 }

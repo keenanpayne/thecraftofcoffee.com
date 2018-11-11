@@ -10,11 +10,11 @@
   padding-bottom: 25px;
   padding-top: 25px;
 
-  @media (max-width: $media-max) {
+  @media (max-width: $media-max-767) {
     text-align: center;
   }
 
-  @media (min-width: $media-min) {
+  @media (min-width: $media-max-768) {
     flex-direction: row;
   }
 }

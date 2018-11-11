@@ -281,7 +281,7 @@ section {
     margin-bottom: 5px;
     margin-top: 5px; }
   .logo.-background {
-    background: url("../dist/images/v60.jpg") top center;
+    background: url("../dist/images/background.jpg") center center;
     background-size: cover;
     color: white;
     font-size: 2.5rem;

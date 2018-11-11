@@ -13,7 +13,7 @@ section {
   padding-left: 25px;
   padding-right: 25px;
 
-  @media (min-width: $media-min) {
+  @media (min-width: $media-max-768) {
     padding-left: 50px;
     padding-right: 50px;
   }
