@@ -5,7 +5,7 @@ title: "Home"
 
 # Sections
 sections:
-  - learning
-  - brewing-guides
+#  - learning
+#  - brewing-guides
   - resources
 ---
