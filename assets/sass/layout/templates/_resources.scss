@@ -1,14 +1,11 @@
 //
-// Section Header
+// Resources
 // =============================================================================
 
-.sectionHeader {
-  border-bottom: 2px solid black;
+.resource {
   margin-bottom: 5rem;
-  max-width: 768px;
-  padding-bottom: 2.5rem;
 
-  > p {
+  &:last-of-type {
     margin-bottom: 0;
   }
 }

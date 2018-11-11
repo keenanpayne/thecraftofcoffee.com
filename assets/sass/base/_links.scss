@@ -5,11 +5,20 @@
 a {
   color: black;
   display: inline-block;
-  text-decoration: none;
+  text-decoration: underline;
+
+  &:hover {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+  }
+
+  //
+  // Modifiers
+  // ---------
 
   // Underline
   &.-underline {
-    color: black;
     display: inline-block;
     position: relative;
     text-decoration: none;
@@ -36,30 +45,6 @@ a {
       height: 100%;
       top: 0;
       transform: translateX(0);
-    }
-  }
-
-  // Always use underlines when links are nested inside certain elements
-  p &,
-  li & {
-    @extend a.-underline;
-  }
-
-  // Faux button
-  &.-button {
-    border: 2px solid black;
-    font-weight: 600;
-    padding: .5rem 1rem;
-    transition: background-color 150ms;
-
-    &:hover {
-      background-color: black;
-      color: white;
-    }
-
-    &:before,
-    &:after {
-      display: none;
     }
   }
 }

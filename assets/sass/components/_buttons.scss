@@ -1,0 +1,21 @@
+//
+// Buttons
+// =============================================================================
+
+button,
+.button {
+  border: 2px solid black;
+  font-weight: 600;
+  padding: .5rem 1rem;
+  transition: background-color 150ms;
+
+  &:hover {
+    background-color: black;
+    color: white;
+  }
+
+  &:before,
+  &:after {
+    display: none;
+  }
+}

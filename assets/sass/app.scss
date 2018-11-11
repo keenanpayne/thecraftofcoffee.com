@@ -38,10 +38,12 @@
 
 // Templates
 @import "layout/templates/articles";
+@import "layout/templates/resources";
 
 
 //
 // Components
 // ----------
+@import "components/buttons";
 @import "components/logo";
 @import "components/navigation";

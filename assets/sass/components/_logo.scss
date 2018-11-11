@@ -4,7 +4,7 @@
 
 .logo {
   border-bottom: 5px solid black;
-  font-family: 'Bungee Shade', serif;
+  font-family: $font-logo-primary;
   font-size: 3.5rem;
   line-height: 1;
   padding-bottom: spacing(10);
@@ -15,7 +15,7 @@
   span {
     color: #c47c4f;
     display: block;
-    font-family: 'Vampiro One', cursive;
+    font-family: $font-logo-secondary;
     font-size: 1.5rem;
     font-style: italic;
     font-weight: lighter;
@@ -37,8 +37,8 @@
     color: white;
     font-size: 2.5rem;
     text-shadow: 1px 1px 0 black;
-    padding-bottom: spacing(8);
-    padding-top: spacing(7);
+    padding-bottom: spacing(10);
+    padding-top: spacing(10);
 
     span {
       font-size: 1.25rem;

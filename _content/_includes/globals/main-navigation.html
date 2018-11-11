@@ -8,7 +8,7 @@
       <li>
         <!-- Create a link if it is not the active -->
         {% if page.url !== item.url %}
-          <a href="{{ item.url }}" title="{{ item.data.title }}">
+          <a href="{{ item.url }}" title="{{ item.data.title }}" class="-underline">
         {% endif %}
           {{ item.data.title }}
 

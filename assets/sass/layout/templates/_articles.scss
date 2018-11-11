@@ -64,6 +64,12 @@
       padding-left: .25rem;
     }
   }
+
+  li {
+    &:not(:first-of-type) {
+      margin-top: .55rem;
+    }
+  }
 }
 
 .article-updated {

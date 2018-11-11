@@ -2,6 +2,10 @@
 // Globals
 // =============================================================================
 
+//
+// The Kitchen Sink
+// ----------------
+
 // Anti-alias text on Retina/high DPI devices
 * {
   @media screen and (-webkit-min-device-pixel-ratio: 2),
@@ -11,9 +15,12 @@
   }
 }
 
-// Base layout
+//
+// Base Layout
+// -----------
+
 :root {
-  // Skins
+  // Background tile with border skin
   &.-background-tile {
     background: url($assets-images + 'body-bg.png') repeat center center; /* Remember that this came from https://outlane.co/now/freebie-coffee-background-pattern/ */
     background-size: 250px;
@@ -33,6 +40,7 @@
     }
   }
 
+  // Simple border around the whole page
   &.-bordered-wide {
     border: 5px solid black;
   }
