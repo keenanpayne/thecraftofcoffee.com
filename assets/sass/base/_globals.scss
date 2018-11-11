@@ -15,7 +15,7 @@
 :root {
   // Skins
   &.-background-tile {
-    background: url('../dist/images/body-bg.png') repeat center center; /* Remember that this came from https://outlane.co/now/freebie-coffee-background-pattern/ */
+    background: url($assets-images + 'body-bg.png') repeat center center; /* Remember that this came from https://outlane.co/now/freebie-coffee-background-pattern/ */
     background-size: 250px;
     padding: 10px;
 

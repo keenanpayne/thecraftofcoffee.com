@@ -7,8 +7,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-bottom: 25px;
-  padding-top: 25px;
+  padding-bottom: spacing(5);
+  padding-top: spacing(5);
 
   @media (max-width: $media-max-767) {
     text-align: center;

@@ -10,11 +10,11 @@ section {
   margin-left: auto;
   margin-right: auto;
   max-width: 1260px;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: spacing(5);
+  padding-right: spacing(5);
 
   @media (min-width: $media-max-768) {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: spacing(10);
+    padding-right: spacing(10);
   }
 }
