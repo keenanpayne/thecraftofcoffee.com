@@ -4,6 +4,7 @@
 
 .logo {
   border-bottom: 5px solid black;
+  color: white;
   font-family: $font-logo-primary;
   font-size: 3.5rem;
   line-height: 1;
@@ -11,32 +12,30 @@
   padding-top: spacing(10);
   margin: 0 auto;
   text-align: center;
+  text-shadow: 1px 1px 0 black;
 
   span {
-    color: #c47c4f;
     display: block;
     font-family: $font-logo-secondary;
     font-size: 1.5rem;
     font-style: italic;
     font-weight: lighter;
-  }
 
-  span:first-of-type {
-    margin-bottom: spacing(1);
-  }
+    &:first-of-type {
+      margin-bottom: spacing(1);
+    }
 
-  span:last-of-type {
-    margin-bottom: spacing(1);
-    margin-top: spacing(1);
+    &:last-of-type {
+      margin-bottom: spacing(1);
+      margin-top: spacing(1);
+    }
   }
 
   // Modifiers
   &.-background {
     background: url($assets-images + 'background.jpg') center center;
     background-size: cover;
-    color: white;
     font-size: 2.5rem;
-    text-shadow: 1px 1px 0 black;
     padding-bottom: spacing(10);
     padding-top: spacing(10);
 

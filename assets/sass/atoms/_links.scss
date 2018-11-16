@@ -39,12 +39,17 @@ a {
       z-index: -1;
     }
 
-    &:hover:after {
-      background-color: rgba(168, 229, 255, .25);
-      box-shadow: 0 0 5px 3px rgba(168, 229, 255, .25);
-      height: 100%;
-      top: 0;
-      transform: translateX(0);
+    &:hover {
+      background-color: transparent;
+      color: currentColor;
+
+      &:hover:after {
+        background-color: rgba(168, 229, 255, .25);
+        box-shadow: 0 0 5px 3px rgba(168, 229, 255, .25);
+        height: 100%;
+        top: 0;
+        transform: translateX(0);
+      }
     }
   }
 }

@@ -6,7 +6,7 @@
 // Helpers
 // -------
 
-// Globals
+// Variables
 @import "helpers/variables";
 
 // Functions
@@ -14,36 +14,39 @@
 
 
 //
-// Base
-// ----
-@import "base/globals";
-@import "base/links";
-@import "base/lists";
-@import "base/typography";
+// Atoms
+// -----
+
+@import "atoms/buttons";
+@import "atoms/links";
+@import "atoms/lists";
+@import "atoms/typography";
 
 
 //
-// Layout
-// ------
-
 // Globals
-@import "layout/globals/footer";
-@import "layout/globals/globals";
-@import "layout/globals/header";
+// -------
 
-// Partials
-@import "layout/partials/brewing-guides";
-@import "layout/partials/link-columns";
-@import "layout/partials/section-header";
-
-// Templates
-@import "layout/templates/articles";
-@import "layout/templates/resources";
+@import "globals/base";
+@import "globals/footer";
+@import "globals/header";
+@import "globals/logo";
+@import "globals/navigation";
+@import "globals/sections";
 
 
 //
 // Components
 // ----------
-@import "components/buttons";
-@import "components/logo";
-@import "components/navigation";
+
+@import "components/brewing-guides";
+@import "components/link-columns";
+@import "components/section-header";
+
+
+//
+// Templates
+// ---------
+
+@import "templates/articles";
+@import "templates/resources";
