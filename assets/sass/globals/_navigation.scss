@@ -3,7 +3,6 @@
 // =============================================================================
 
 .navigation {
-  border-bottom: 5px solid black;
   text-align: center;
 
   > h2 {
@@ -12,6 +11,8 @@
 
   ul {
     list-style-type: none;
+    margin-bottom: 0;
+    margin-top: 0;
     padding-left: 0;
 
     li {

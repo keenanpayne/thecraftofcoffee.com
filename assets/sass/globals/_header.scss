@@ -3,5 +3,13 @@
 // =============================================================================
 
 .g-header {
+  align-items: center;
+  border-bottom: 5px solid black;
+  justify-content: space-between;
   margin-bottom: 5rem;
+  padding: spacing(5);
+
+  @media (min-width: $media-min-768) {
+    display: flex;
+  }
 }

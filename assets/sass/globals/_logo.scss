@@ -3,21 +3,16 @@
 // =============================================================================
 
 .logo {
-  border-bottom: 5px solid black;
-  color: white;
+  color: black;
   font-family: $font-logo-primary;
-  font-size: 3.5rem;
+  font-size: 1.5rem;
   line-height: 1;
-  padding-bottom: spacing(10);
-  padding-top: spacing(10);
-  margin: 0 auto;
   text-align: center;
-  text-shadow: 1px 1px 0 black;
 
   span {
     display: block;
     font-family: $font-logo-secondary;
-    font-size: 1.5rem;
+    font-size: .5em;
     font-style: italic;
     font-weight: lighter;
 
@@ -29,6 +24,10 @@
       margin-bottom: spacing(1);
       margin-top: spacing(1);
     }
+  }
+
+  @media (max-width: $media-max-767) {
+    margin-bottom: spacing(5);
   }
 
   // Modifiers

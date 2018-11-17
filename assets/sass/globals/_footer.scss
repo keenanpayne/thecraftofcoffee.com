@@ -3,18 +3,31 @@
 // =============================================================================
 
 .g-footer {
+  align-items: center;
   border-top: 5px solid black;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-bottom: spacing(5);
-  padding-top: spacing(5);
+  padding: spacing(10);
 
   @media (max-width: $media-max-767) {
     text-align: center;
   }
 
-  @media (min-width: $media-max-768) {
+  @media (min-width: $media-min-768) {
     flex-direction: row;
+  }
+
+  //
+  // Descendants
+  // -----------
+
+  p {
+    margin-bottom: 0;
+    margin-top: 0;
+
+    @media (max-width: $media-max-767) {
+      margin-bottom: spacing(5);
+    }
   }
 }

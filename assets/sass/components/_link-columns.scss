@@ -3,7 +3,7 @@
 // =============================================================================
 
 .linkColumns {
-  @media (min-width: $media-max-768) {
+  @media (min-width: $media-min-768) {
     display: flex;
     justify-content: space-evenly;
   }

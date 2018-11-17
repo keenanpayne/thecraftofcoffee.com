@@ -4,7 +4,7 @@
 
 .article {
   figure {
-    @media (min-width: $media-max-768) {
+    @media (min-width: $media-min-768) {
       margin-left: -10rem;
     }
   }

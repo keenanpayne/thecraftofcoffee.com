@@ -130,37 +130,45 @@ body {
   margin: 0 auto; }
 
 .g-footer {
+  align-items: center;
   border-top: 5px solid black;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-bottom: 25px;
-  padding-top: 25px; }
+  padding: 50px; }
   @media (max-width: 767px) {
     .g-footer {
       text-align: center; } }
   @media (min-width: 768px) {
     .g-footer {
       flex-direction: row; } }
+  .g-footer p {
+    margin-bottom: 0;
+    margin-top: 0; }
+    @media (max-width: 767px) {
+      .g-footer p {
+        margin-bottom: 25px; } }
 
 .g-header {
-  margin-bottom: 5rem; }
+  align-items: center;
+  border-bottom: 5px solid black;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+  padding: 25px; }
+  @media (min-width: 768px) {
+    .g-header {
+      display: flex; } }
 
 .logo {
-  border-bottom: 5px solid black;
-  color: white;
+  color: black;
   font-family: "Bungee Shade", serif;
-  font-size: 3.5rem;
+  font-size: 1.5rem;
   line-height: 1;
-  padding-bottom: 50px;
-  padding-top: 50px;
-  margin: 0 auto;
-  text-align: center;
-  text-shadow: 1px 1px 0 black; }
+  text-align: center; }
   .logo span {
     display: block;
     font-family: "Vampiro One", cursive;
-    font-size: 1.5rem;
+    font-size: .5em;
     font-style: italic;
     font-weight: lighter; }
     .logo span:first-of-type {
@@ -168,6 +176,9 @@ body {
     .logo span:last-of-type {
       margin-bottom: 5px;
       margin-top: 5px; }
+  @media (max-width: 767px) {
+    .logo {
+      margin-bottom: 25px; } }
   .logo.-background {
     background: url("../dist/images/background.jpg") center center;
     background-size: cover;
@@ -178,12 +189,13 @@ body {
       font-size: 1.25rem; }
 
 .navigation {
-  border-bottom: 5px solid black;
   text-align: center; }
   .navigation > h2 {
     display: none; }
   .navigation ul {
     list-style-type: none;
+    margin-bottom: 0;
+    margin-top: 0;
     padding-left: 0; }
     .navigation ul li {
       display: inline-block;
