@@ -21,11 +21,6 @@ a {
     background-color: black;
     color: white;
     text-decoration: none; }
-  a.-flat {
-    text-decoration: none; }
-    a.-flat:hover {
-      background-color: transparent;
-      color: inherit; }
   a.-underline {
     display: inline-block;
     position: relative;
@@ -56,6 +51,15 @@ a {
 
 ul {
   padding-left: 0; }
+
+li {
+  list-style-type: circle; }
+
+.squiggle {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/squiggle.svg");
+  background-size: 20%;
+  height: 18px;
+  max-width: 150px; }
 
 :root {
   font-size: 14px; }
@@ -166,6 +170,13 @@ body {
       padding-left: 50px;
       padding-right: 50px; } }
 
+.logo-link {
+  display: block;
+  text-decoration: none; }
+  .logo-link:hover {
+    background-color: transparent;
+    color: inherit; }
+
 .logo {
   color: black;
   font-family: "Bungee Shade", serif;
@@ -243,11 +254,6 @@ body {
 .brewing-all {
   margin-top: 2.5rem;
   text-align: center; }
-
-@media (min-width: 768px) {
-  .linkColumns {
-    display: flex;
-    justify-content: space-evenly; } }
 
 .pageHeader {
   align-items: flex-end;
@@ -361,7 +367,26 @@ body {
   margin-bottom: 1rem;
   margin-top: 0; }
 
+.resources {
+  display: flex;
+  flex-wrap: wrap; }
+
 .resource {
   margin-bottom: 5rem; }
-  .resource:last-of-type {
+  @media (min-width: 768px) {
+    .resource {
+      width: 30%; }
+      .resource:not(:first-of-type) {
+        padding-left: 5%; }
+      .resource:nth-child(4n) {
+        padding-left: 0; }
+      .resource:last-of-type {
+        margin-bottom: 0; } }
+
+.resources-header {
+  margin-bottom: 2.5rem;
+  max-width: 768px; }
+  .resources-header > p {
     margin-bottom: 0; }
+  .resources-header .squiggle {
+    margin-top: 2.5rem; }

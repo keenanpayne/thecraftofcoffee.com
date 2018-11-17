@@ -2,6 +2,16 @@
 // Logo
 // =============================================================================
 
+.logo-link {
+  display: block;
+  text-decoration: none;
+
+  &:hover {
+    background-color: transparent;
+    color: inherit;
+  }
+}
+
 .logo {
   color: black;
   font-family: $font-logo-primary;

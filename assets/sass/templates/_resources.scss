@@ -2,10 +2,40 @@
 // Resources
 // =============================================================================
 
+.resources {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .resource {
   margin-bottom: $spacing-section;
 
-  &:last-of-type {
+  @media (min-width: $media-min-768) {
+    width: 30%;
+
+    &:not(:first-of-type) {
+      padding-left: 5%;
+    }
+
+    &:nth-child(4n) {
+      padding-left: 0;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.resources-header {
+  margin-bottom: ($spacing-section / 2);
+  max-width: 768px;
+
+  > p {
     margin-bottom: 0;
+  }
+
+  .squiggle {
+    margin-top: ($spacing-section / 2);
   }
 }

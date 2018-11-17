@@ -17,15 +17,6 @@ a {
   // Modifiers
   // ---------
 
-  &.-flat {
-    text-decoration: none;
-
-    &:hover {
-      background-color: transparent;
-      color: inherit;
-    }
-  }
-
   // Underline
   &.-underline {
     display: inline-block;
