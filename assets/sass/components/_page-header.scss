@@ -1,0 +1,37 @@
+//
+// Page Header
+// =============================================================================
+
+.pageHeader {
+  align-items: flex-end;
+  background: url($assets-images + 'background.jpg') center center;
+  background-size: cover;
+  border-bottom: 5px solid black;
+  color: white;
+  display: flex;
+  padding: spacing(5) spacing(10);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, .5);
+
+  @media (min-width: $media-min-768) {
+    height: 300px;
+  }
+}
+
+
+//
+// Descendants
+// -----------
+
+.pageHeader-title {
+  @media (min-width: $media-min-768) {
+    font-size: 4rem;
+  }
+}
+
+.pageHeader-description {
+  font-size: 1.333rem;
+
+  @media (min-width: $media-min-768) {
+    max-width: 75%;
+  }
+}

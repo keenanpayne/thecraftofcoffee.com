@@ -21,6 +21,11 @@ a {
     background-color: black;
     color: white;
     text-decoration: none; }
+  a.-flat {
+    text-decoration: none; }
+    a.-flat:hover {
+      background-color: transparent;
+      color: inherit; }
   a.-underline {
     display: inline-block;
     position: relative;
@@ -153,11 +158,13 @@ body {
   align-items: center;
   border-bottom: 5px solid black;
   justify-content: space-between;
-  margin-bottom: 5rem;
-  padding: 25px; }
+  padding-bottom: 25px;
+  padding-top: 25px; }
   @media (min-width: 768px) {
     .g-header {
-      display: flex; } }
+      display: flex;
+      padding-left: 50px;
+      padding-right: 50px; } }
 
 .logo {
   color: black;
@@ -179,14 +186,6 @@ body {
   @media (max-width: 767px) {
     .logo {
       margin-bottom: 25px; } }
-  .logo.-background {
-    background: url("../dist/images/background.jpg") center center;
-    background-size: cover;
-    font-size: 2.5rem;
-    padding-bottom: 50px;
-    padding-top: 50px; }
-    .logo.-background span {
-      font-size: 1.25rem; }
 
 .navigation {
   text-align: center; }
@@ -206,7 +205,10 @@ body {
   .navigation.-secondary {
     border: none; }
 
-section {
+[data-page-section] + [data-page-section] {
+  margin-top: 5rem; }
+
+[data-page-section]:last-of-type {
   margin-bottom: 5rem; }
 
 .container {
@@ -246,6 +248,29 @@ section {
   .linkColumns {
     display: flex;
     justify-content: space-evenly; } }
+
+.pageHeader {
+  align-items: flex-end;
+  background: url("../dist/images/background.jpg") center center;
+  background-size: cover;
+  border-bottom: 5px solid black;
+  color: white;
+  display: flex;
+  padding: 25px 50px;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5); }
+  @media (min-width: 768px) {
+    .pageHeader {
+      height: 300px; } }
+
+@media (min-width: 768px) {
+  .pageHeader-title {
+    font-size: 4rem; } }
+
+.pageHeader-description {
+  font-size: 1.333rem; }
+  @media (min-width: 768px) {
+    .pageHeader-description {
+      max-width: 75%; } }
 
 .sectionHeader {
   border-bottom: 2px solid black;
@@ -311,6 +336,10 @@ section {
   font-size: .875rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
+  text-align: right; }
+
+.article-readmore {
+  font-style: italic;
   text-align: right; }
 
 .articles {

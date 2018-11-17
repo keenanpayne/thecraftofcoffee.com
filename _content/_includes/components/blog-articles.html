@@ -1,6 +1,6 @@
-<div class="container">
+<div class="container" data-page-section>
   <div class="articles">
-    <h1 class="articles-header">Blog</h1>
+    <!-- <h1 class="articles-header">Blog</h1> -->
 
     {%- for post in collections.post -%}
       <article class="article {% if not loop.first %} -border {% endif %}">
@@ -15,7 +15,13 @@
         </p>
 
         <p class="article-excerpt">
-          This is an excerpt from the article content. It will be the first paragraph of text that is written in the article so that we can give people a glimpse into the article content.
+          {{ post.data.content | safe | truncate(500) }}
+        </p>
+
+        <p class="article-readmore">
+          <a href="{{ post.url }}" title="{{ post.data.title }}">
+            Read more
+          </a>
         </p>
       </article>
     {%- endfor -%}
