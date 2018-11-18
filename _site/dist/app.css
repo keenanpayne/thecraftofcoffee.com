@@ -83,7 +83,7 @@ li {
 
 body {
   color: #333;
-  font-family: "Lato", sans-serif;
+  font-family: trade-gothic-next, sans-serif;
   font-weight: 400;
   line-height: 1.5; }
 
@@ -100,8 +100,9 @@ h1,
 h2,
 h3,
 h4 {
-  margin: 1.414rem 0 0.5rem;
+  font-family: miller-headline, serif;
   font-weight: inherit;
+  margin: 1.414rem 0 0.5rem;
   line-height: 1.2; }
 
 h1 {
@@ -113,8 +114,7 @@ h2 {
 
 h3 {
   font-size: 1.777rem;
-  font-variant: all-small-caps;
-  font-weight: 600; }
+  font-variant: all-small-caps; }
 
 h4 {
   font-size: 1.333rem; }
@@ -122,28 +122,12 @@ h4 {
 small {
   font-size: 0.75rem; }
 
-@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) {
-  * {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale; } }
-
-:root.-background-tile {
-  background: url("../dist/images/body-bg.png") repeat center center;
-  /* Remember that this came from https://outlane.co/now/freebie-coffee-background-pattern/ */
-  background-size: 250px;
-  padding: 10px; }
-  @media (min-width: 768px) {
-    :root.-background-tile {
-      padding: 50px; } }
-  @media (min-width: 1260px) {
-    :root.-background-tile {
-      padding: 50px 100px; } }
-  :root.-background-tile body {
-    border: 5px solid black;
-    max-width: 1260px; }
-
-:root.-bordered-wide {
-  border: 5px solid black; }
+* {
+  box-sizing: border-box; }
+  @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) {
+    * {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale; } }
 
 body {
   background-color: white;
@@ -151,20 +135,20 @@ body {
 
 .g-footer {
   align-items: center;
-  background: url("../dist/images/body-bg.png") repeat;
-  background-size: 25%;
-  border-top: 5px solid black;
+  border-top: 3px solid black;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 50px; }
+  padding: 25px; }
   @media (max-width: 767px) {
     .g-footer {
       text-align: center; } }
   @media (min-width: 768px) {
     .g-footer {
-      flex-direction: row; } }
+      flex-direction: row;
+      padding: 50px 25px; } }
   .g-footer p {
+    font-size: 1rem;
     margin-bottom: 0;
     margin-top: 0; }
     @media (max-width: 767px) {
@@ -173,15 +157,12 @@ body {
 
 .g-header {
   align-items: center;
-  border-bottom: 5px solid black;
   justify-content: space-between;
   padding-bottom: 25px;
   padding-top: 25px; }
   @media (min-width: 768px) {
     .g-header {
-      display: flex;
-      padding-left: 50px;
-      padding-right: 50px; } }
+      display: flex; } }
 
 .logo-link {
   display: block;
@@ -213,21 +194,36 @@ body {
 
 .navigation {
   text-align: center; }
+  @media (min-width: 768px) {
+    .navigation {
+      font-size: .75rem;
+      text-align: right; } }
   .navigation > h2 {
     display: none; }
   .navigation ul {
-    list-style-type: none;
     margin-bottom: 0;
     margin-top: 0;
     padding-left: 0; }
     .navigation ul li {
       display: inline-block;
       font-weight: 900;
+      list-style-type: none;
       text-transform: uppercase; }
       .navigation ul li:not(:first-of-type) {
-        margin-left: 2rem; }
-  .navigation.-secondary {
-    border: none; }
+        margin-left: 1rem; }
+      @media (min-width: 768px) {
+        .navigation ul li {
+          display: block; }
+          .navigation ul li:not(:first-of-type) {
+            margin-left: 0;
+            margin-top: .25rem; } }
+  .navigation.-inline {
+    text-align: right; }
+    .navigation.-inline ul li {
+      display: inline-block; }
+    .navigation.-inline ul:not(:first-of-type) {
+      margin-left: 2rem;
+      margin-top: 0; }
 
 [data-page-section] + [data-page-section] {
   margin-top: 5rem; }
@@ -239,12 +235,12 @@ body {
   margin-left: auto;
   margin-right: auto;
   max-width: 1260px;
-  padding-left: 25px;
-  padding-right: 25px; }
+  margin-left: 25px;
+  margin-right: 25px; }
   @media (min-width: 768px) {
     .container {
-      padding-left: 50px;
-      padding-right: 50px; } }
+      margin-left: 50px;
+      margin-right: 50px; } }
 
 @media (min-width: 768px) {
   .brewing {
@@ -272,24 +268,58 @@ body {
   align-items: flex-end;
   background: url("../dist/images/background.jpg") center center;
   background-size: cover;
-  border-bottom: 5px solid black;
-  color: white;
   display: flex;
   padding: 25px 50px;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5); }
+  position: relative; }
   @media (min-width: 768px) {
     .pageHeader {
-      height: 300px; } }
+      height: 350px;
+      max-width: 1260px;
+      margin-left: 50px;
+      margin-right: 50px; } }
+  .pageHeader:after {
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    opacity: .1;
+    z-index: 1; }
 
-@media (min-width: 768px) {
-  .pageHeader-title {
-    font-size: 4rem; } }
+.pageHeader-content {
+  padding: 2rem 0 4rem calc(1rem + 20px);
+  position: relative;
+  z-index: 1; }
+  @media (min-width: 768px) {
+    .pageHeader-content {
+      max-width: 60%; } }
+  .pageHeader-content:before, .pageHeader-content:after {
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%; }
+  .pageHeader-content:before {
+    outline: 3px solid #d9a675; }
+  .pageHeader-content:after {
+    background-color: white;
+    box-shadow: 1px 0px 9px 3px rgba(51, 51, 51, 0.1);
+    left: 9px;
+    padding-left: 3px;
+    padding-top: 3px;
+    top: -12px;
+    z-index: -1; }
+
+.pageHeader-title {
+  font-weight: 700;
+  margin-top: 0; }
 
 .pageHeader-description {
-  font-size: 1.333rem; }
-  @media (min-width: 768px) {
-    .pageHeader-description {
-      max-width: 75%; } }
+  margin-bottom: 0;
+  max-width: 95%; }
 
 .sectionHeader {
   border-bottom: 2px solid black;

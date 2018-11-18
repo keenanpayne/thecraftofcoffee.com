@@ -4,14 +4,11 @@
 
 .g-header {
   align-items: center;
-  border-bottom: 5px solid black;
   justify-content: space-between;
   padding-bottom: spacing(5);
   padding-top: spacing(5);
 
   @media (min-width: $media-min-768) {
     display: flex;
-    padding-left: spacing(10);
-    padding-right: spacing(10);
   }
 }

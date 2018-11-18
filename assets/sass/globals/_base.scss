@@ -8,6 +8,8 @@
 
 // Anti-alias text on Retina/high DPI devices
 * {
+  box-sizing: border-box;
+  
   @media screen and (-webkit-min-device-pixel-ratio: 2),
          screen and (min-resolution: 2dppx) {
     -webkit-font-smoothing: antialiased;
@@ -18,33 +20,6 @@
 //
 // Base Layout
 // -----------
-
-:root {
-  // Background tile with border skin
-  &.-background-tile {
-    background: url($assets-images + 'body-bg.png') repeat center center; /* Remember that this came from https://outlane.co/now/freebie-coffee-background-pattern/ */
-    background-size: 250px;
-    padding: 10px;
-
-    @media (min-width: $media-min-768) {
-      padding: 50px;
-    }
-
-    @media (min-width: 1260px) {
-      padding: 50px 100px;
-    }
-
-    body {
-      border: 5px solid black;
-      max-width: 1260px;
-    }
-  }
-
-  // Simple border around the whole page
-  &.-bordered-wide {
-    border: 5px solid black;
-  }
-}
 
 body {
   background-color: white;
