@@ -16,7 +16,8 @@
 
   @media (min-width: $media-min-768) {
     flex-direction: row;
-    padding: spacing(10) spacing(5);
+    padding-bottom: spacing(10);
+    padding-top: spacing(10);
   }
 
   //

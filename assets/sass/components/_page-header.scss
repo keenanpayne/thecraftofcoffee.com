@@ -7,7 +7,7 @@
   background: url($assets-images + 'background.jpg') center center;
   background-size: cover;
   display: flex;
-  padding: spacing(5) spacing(10);
+  padding: spacing(5);
   position: relative;
 
   @media (min-width: $media-min-768) {
@@ -15,6 +15,8 @@
     max-width: 1260px;
     margin-left: spacing(10);
     margin-right: spacing(10);
+    padding-left: spacing(10);
+    padding-right: spacing(10);
   }
 
   &:after {
@@ -38,10 +40,11 @@
 .pageHeader-content {
   padding: 2rem 0 4rem calc(1rem + 20px);
   position: relative;
+  width: 100%;
   z-index: 1;
 
   @media (min-width: $media-min-768) {
-    max-width: 60%;
+    max-width: 600px;
   }
 
   &:before,

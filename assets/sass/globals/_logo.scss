@@ -27,12 +27,12 @@
     font-weight: lighter;
 
     &:first-of-type {
-      margin-bottom: spacing(1);
+      margin-bottom: 3px;
     }
 
     &:last-of-type {
-      margin-bottom: spacing(1);
-      margin-top: spacing(1);
+      margin-bottom: 5px;
+      margin-top: 5px;
     }
   }
 

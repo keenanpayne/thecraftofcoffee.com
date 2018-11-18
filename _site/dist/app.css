@@ -18,6 +18,8 @@ a {
   display: inline-block;
   position: relative;
   text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
   p a,
   ul a {
     background: linear-gradient(black, black) bottom no-repeat;
@@ -146,7 +148,8 @@ body {
   @media (min-width: 768px) {
     .g-footer {
       flex-direction: row;
-      padding: 50px 25px; } }
+      padding-bottom: 50px;
+      padding-top: 50px; } }
   .g-footer p {
     font-size: 1rem;
     margin-bottom: 0;
@@ -159,6 +162,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding-bottom: 25px;
+  padding-left: 25px;
   padding-top: 25px; }
   @media (min-width: 768px) {
     .g-header {
@@ -184,7 +188,7 @@ body {
     font-style: italic;
     font-weight: lighter; }
     .logo span:first-of-type {
-      margin-bottom: 5px; }
+      margin-bottom: 3px; }
     .logo span:last-of-type {
       margin-bottom: 5px;
       margin-top: 5px; }
@@ -269,14 +273,16 @@ body {
   background: url("../dist/images/background.jpg") center center;
   background-size: cover;
   display: flex;
-  padding: 25px 50px;
+  padding: 25px;
   position: relative; }
   @media (min-width: 768px) {
     .pageHeader {
       height: 350px;
       max-width: 1260px;
       margin-left: 50px;
-      margin-right: 50px; } }
+      margin-right: 50px;
+      padding-left: 50px;
+      padding-right: 50px; } }
   .pageHeader:after {
     background-color: black;
     position: absolute;
@@ -291,10 +297,11 @@ body {
 .pageHeader-content {
   padding: 2rem 0 4rem calc(1rem + 20px);
   position: relative;
+  width: 100%;
   z-index: 1; }
   @media (min-width: 768px) {
     .pageHeader-content {
-      max-width: 60%; } }
+      max-width: 600px; } }
   .pageHeader-content:before, .pageHeader-content:after {
     content: '';
     height: 100%;
