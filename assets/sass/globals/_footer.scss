@@ -4,6 +4,8 @@
 
 .g-footer {
   align-items: center;
+  background: url($assets-images + 'body-bg.png') repeat;
+  background-size: 25%;
   border-top: 5px solid black;
   display: flex;
   flex-direction: column;

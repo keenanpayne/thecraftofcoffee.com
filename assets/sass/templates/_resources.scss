@@ -8,10 +8,14 @@
 }
 
 .resource {
-  margin-bottom: $spacing-section;
+  margin-bottom: ($spacing-section / 2);
 
   @media (min-width: $media-min-768) {
     width: 30%;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
 
     &:not(:first-of-type) {
       padding-left: 5%;
@@ -21,8 +25,8 @@
       padding-left: 0;
     }
 
-    &:last-of-type {
-      margin-bottom: 0;
+    &:nth-child(n+4) {
+      margin-top: ($spacing-section / 2);
     }
   }
 }
