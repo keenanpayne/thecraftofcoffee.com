@@ -3,13 +3,10 @@
 // =============================================================================
 
 .g-header {
-  align-items: center;
-  justify-content: space-between;
-  padding-bottom: spacing(5);
-  padding-left: spacing(5);
-  padding-top: spacing(5);
+  @include container;
 
-  @media (min-width: $media-min-768) {
-    display: flex;
-  }
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5rem spacing(5);
 }

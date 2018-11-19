@@ -13,9 +13,6 @@ $assets-images: '../dist/images/';
 $spacing-unit: 5px;
 $spacing-section: 5rem;
 
-// Color palette
-
-
 // Fonts
 $font-primary: trade-gothic-next, sans-serif;
 $font-secondary: miller-headline, serif;
@@ -23,4 +20,5 @@ $font-secondary: miller-headline, serif;
 $font-logo-primary: 'Bungee Shade', serif;
 $font-logo-secondary: 'Vampiro One', cursive;
 
-// Type sizes
+// Layout
+$container-width: 1260px;

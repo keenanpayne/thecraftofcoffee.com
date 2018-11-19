@@ -159,14 +159,13 @@ body {
         margin-bottom: 25px; } }
 
 .g-header {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1260px;
   align-items: center;
+  display: flex;
   justify-content: space-between;
-  padding-bottom: 25px;
-  padding-left: 25px;
-  padding-top: 25px; }
-  @media (min-width: 768px) {
-    .g-header {
-      display: flex; } }
+  padding: 2.5rem 25px; }
 
 .logo-link {
   display: block;
@@ -192,12 +191,9 @@ body {
     .logo span:last-of-type {
       margin-bottom: 5px;
       margin-top: 5px; }
-  @media (max-width: 767px) {
-    .logo {
-      margin-bottom: 25px; } }
 
 .navigation {
-  text-align: center; }
+  text-align: right; }
   @media (min-width: 768px) {
     .navigation {
       font-size: .75rem;
@@ -209,18 +205,12 @@ body {
     margin-top: 0;
     padding-left: 0; }
     .navigation ul li {
-      display: inline-block;
+      display: block;
       font-weight: 900;
       list-style-type: none;
       text-transform: uppercase; }
       .navigation ul li:not(:first-of-type) {
-        margin-left: 1rem; }
-      @media (min-width: 768px) {
-        .navigation ul li {
-          display: block; }
-          .navigation ul li:not(:first-of-type) {
-            margin-left: 0;
-            margin-top: .25rem; } }
+        margin-top: .25rem; }
   .navigation.-inline {
     text-align: right; }
     .navigation.-inline ul li {
@@ -239,12 +229,8 @@ body {
   margin-left: auto;
   margin-right: auto;
   max-width: 1260px;
-  margin-left: 25px;
-  margin-right: 25px; }
-  @media (min-width: 768px) {
-    .container {
-      margin-left: 50px;
-      margin-right: 50px; } }
+  padding-left: 25px;
+  padding-right: 25px; }
 
 @media (min-width: 768px) {
   .brewing {
@@ -277,12 +263,14 @@ body {
   position: relative; }
   @media (min-width: 768px) {
     .pageHeader {
-      height: 350px;
       max-width: 1260px;
-      margin-left: 50px;
-      margin-right: 50px;
-      padding-left: 50px;
-      padding-right: 50px; } }
+      height: 350px;
+      margin-left: 25px;
+      margin-right: 25px; } }
+  @media (min-width: 1285px) {
+    .pageHeader {
+      margin-left: auto;
+      margin-right: auto; } }
   .pageHeader:after {
     background-color: black;
     position: absolute;
