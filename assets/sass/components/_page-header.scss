@@ -42,6 +42,7 @@
 // -----------
 
 .pageHeader-content {
+  border: 1px solid #d9a675;
   padding: 2rem 0 4rem calc(1rem + 20px);
   position: relative;
   width: 100%;
@@ -62,15 +63,15 @@
   }
 
   &:before {
-    outline: 3px solid #d9a675;
+    left: 6px;
+    outline: 1px solid #d9a675;
+    top: -6px;
   }
 
   &:after {
     background-color: white;
     box-shadow: 1px 0px 9px 3px rgba(51, 51, 51, .1);
-    left: 9px;
-    padding-left: 3px;
-    padding-top: 3px;
+    left: 12px;
     top: -12px;
     z-index: -1;
   }
