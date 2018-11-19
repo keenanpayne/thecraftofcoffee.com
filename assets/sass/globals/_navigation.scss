@@ -6,10 +6,11 @@
   text-align: right;
 
   @media (min-width: $media-min-768) {
-    font-size: .75rem;
+    font-size: .875rem;
     text-align: right;
   }
 
+  // Descendants
   > h2 {
     display: none;
   }

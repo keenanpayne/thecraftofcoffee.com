@@ -9,13 +9,14 @@
 // Anti-alias text on Retina/high DPI devices
 * {
   box-sizing: border-box;
-  
+
   @media screen and (-webkit-min-device-pixel-ratio: 2),
          screen and (min-resolution: 2dppx) {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 }
+
 
 //
 // Base Layout
