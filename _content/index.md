@@ -8,6 +8,6 @@ sections:
   - page-header
   - resources
 
-page_title: Coffee Brewing Resources
-page_description: This is an optional description that we can put beneath our page header that might describe the current page that we are on.
+page_title: Resources for brewing better coffee
+page_description: Craft of Coffee is a community-oriented resource for learning all about coffee. Our mission is to help coffee enthusiasts of any skill level easily find the information that they need.
 ---
