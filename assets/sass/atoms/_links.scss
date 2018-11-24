@@ -35,15 +35,14 @@ a {
     &::after {
       background: url('../dist/images/external-link.svg');
       background-size: cover;
-      bottom: .75em;
       content: '';
-      height: 1em;
+      height: .75em;
       opacity: .35;
       position: absolute;
-      right: -1.5em;
+      right: -1em;
+      top: 0;
       transition: opacity $transition-long;
-      width: 1em;
-      z-index: 1;
+      width: .75em;
     }
 
     &:hover {
