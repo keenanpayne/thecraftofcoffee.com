@@ -44,10 +44,11 @@ a {
   a.-external:hover::after {
     opacity: 1; }
   a.-underline {
-    background: transparent; }
+    background: transparent;
+    position: relative; }
     a.-underline::after {
       background: rgba(0, 0, 0, 0);
-      bottom: -4px;
+      bottom: -3px;
       content: '';
       height: 2px;
       left: 0;
@@ -204,20 +205,38 @@ body {
     margin-bottom: 0;
     margin-top: 0;
     padding-left: 0; }
-    .navigation ul li {
-      display: block;
-      font-weight: 900;
-      list-style-type: none;
-      text-transform: uppercase; }
-      .navigation ul li:not(:first-of-type) {
-        margin-top: .25rem; }
+  .navigation li {
+    display: block;
+    font-weight: 900;
+    list-style-type: none;
+    text-transform: uppercase; }
+    .navigation li:not(:first-of-type) {
+      margin-top: .35rem; }
+  .navigation span.-active {
+    background: transparent;
+    position: relative;
+    color: black; }
+    .navigation span.-active::after {
+      background: rgba(0, 0, 0, 0);
+      bottom: -3px;
+      content: '';
+      height: 2px;
+      left: 0;
+      position: absolute;
+      right: 0;
+      transform: scale(0.5) translateY(10px);
+      transition: transform .15s, background .15s; }
+    .navigation span.-active::after {
+      background: rgba(0, 0, 0, 0.8);
+      transform: scale(1) translateY(0);
+      transition-duration: .2s; }
   .navigation.-inline {
     text-align: right; }
-    .navigation.-inline ul li {
+    .navigation.-inline li {
       display: inline-block; }
-    .navigation.-inline ul:not(:first-of-type) {
-      margin-left: 2rem;
-      margin-top: 0; }
+      .navigation.-inline li:not(:first-of-type) {
+        margin-left: 2rem;
+        margin-top: 0; }
 
 [data-page-section] + [data-page-section] {
   margin-top: 5rem; }
@@ -291,7 +310,7 @@ body {
   z-index: 1; }
   @media (min-width: 768px) {
     .pageHeader-content {
-      max-width: 600px; } }
+      max-width: 700px; } }
   .pageHeader-content:before, .pageHeader-content:after {
     content: '';
     height: 100%;

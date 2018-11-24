@@ -4,5 +4,4 @@ layout: page
 title: "Learning"
 
 sections:
-  - learning
 ---

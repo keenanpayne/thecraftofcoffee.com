@@ -9,11 +9,15 @@
         <!-- Create a link if it is not the active -->
         {% if page.url !== item.url %}
           <a href="{{ item.url }}" title="{{ item.data.title }}" class="-underline">
+        {% elseif title !== "Home" %}
+          <span class="-active">
         {% endif %}
           {{ item.data.title }}
 
         {% if page.url !== item.url %}
           </a>
+        {% elseif title !== "Home" %}
+          </span>
         {% endif %}
       </li>
     {%- endfor -%}

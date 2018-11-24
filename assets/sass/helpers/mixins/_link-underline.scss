@@ -1,0 +1,43 @@
+//
+// @mixin link-underline()
+//
+// This will give a link a custom-styled bottom underline
+//
+// @param `$active` if the underline is active without any user interaction
+//                  (e.g., hover)
+//
+
+@mixin link_underline($active: false) {
+  background: transparent;
+  position: relative;
+
+  &::after {
+    background: rgba(black, 0);
+    bottom: -3px;
+    content: '';
+    height: 2px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform: scale(.5) translateY(10px);
+    transition: transform .15s, background .15s;
+  }
+
+  @if ($active == false) {
+    &:hover {
+      @include link_underline-hover();
+    }
+  } @else {
+    @include link_underline-hover();
+  }
+}
+
+@mixin link_underline-hover() {
+  color: black;
+
+  &::after {
+    background: rgba(black, .8);
+    transform: scale(1) translateY(0);
+    transition-duration: .2s;
+  }
+}
