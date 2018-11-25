@@ -173,7 +173,8 @@ body {
   text-decoration: none; }
   .logo-link:hover {
     background-color: transparent;
-    color: inherit; }
+    color: inherit;
+    text-decoration: none; }
 
 .logo {
   color: black;
