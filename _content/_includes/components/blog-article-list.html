@@ -1,3 +1,5 @@
+{% import "templates/article.html" as article with context %}
+
 <div class="container" data-page-section>
   <div class="blogArticleList">
     {%- for post in collections.post -%}
@@ -8,9 +10,7 @@
           </a>
         </h2>
 
-        <p class="article-date">
-          By {{ post.data.author }} on {{ post.date }}
-        </p>
+        {{ article.meta() }}
 
         <p class="article-excerpt">
           {{ post.data.content | safe | truncate(500) }}

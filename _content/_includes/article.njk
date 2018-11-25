@@ -2,31 +2,20 @@
 layout: default
 ---
 
+{% import "templates/article.html" as article with context %}
+
 <article class="article container">
   <header class="article-header">
     <h1 class="article-title">
       {{ title }}
     </h1>
 
-    {% if lead %}
-      <p class="article-lead">
-        {{ lead }}
-      </p>
-    {% endif %}
+    {{ article.lead() }}
 
-    {% if author or read_time %}
-      <p class="article-author">
-        By {{ author }}
-        {% if read_time %}
-          {{ read_time }} | read
-        {% endif %}
-      </p>
-    {% endif %}
+    {{ article.meta() }}
   </header>
 
-  <div class="article-content">
-    {{ content | safe }}
-  </div>
+  {{ article.content() }}
 
-  <p class="article-updated">Last updated on September 20, 2018 at 2:34pm</p>
+  {{ article.updated() }}
 </article>

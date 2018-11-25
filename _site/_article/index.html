@@ -100,6 +100,8 @@
 
   <main role="main">
   
+
+
 <article class="article container">
   <header class="article-header">
     <h1 class="article-title">
@@ -107,30 +109,106 @@
     </h1>
 
     
-      <p class="article-lead">
-        How you can learn about one of coffee-making&#39;s most essential tools and you can use it to make excellent coffee at home.
-      </p>
-    
+  
+    <p class="article-lead">
+      function () {
+    for (var _len = arguments.length, macroArgs = new Array(_len), _key = 0; _key &lt; _len; _key++) {
+      macroArgs[_key] = arguments[_key];
+    }
+
+    var argCount = numArgs(macroArgs);
+    var args;
+    var kwargs = getKeywordArgs(macroArgs);
+
+    if (argCount &gt; argNames.length) {
+      args = macroArgs.slice(0, argNames.length); // Positional arguments that should be passed in as
+      // keyword arguments (essentially default values)
+
+      macroArgs.slice(args.length, argCount).forEach(function (val, i) {
+        if (i &lt; kwargNames.length) {
+          kwargs[kwargNames[i]] = val;
+        }
+      });
+      args.push(kwargs);
+    } else if (argCount &lt; argNames.length) {
+      args = macroArgs.slice(0, argCount);
+
+      for (var i = argCount; i &lt; argNames.length; i++) {
+        var arg = argNames[i]; // Keyword arguments that should be passed as
+        // positional arguments, i.e. the caller explicitly
+        // used the name of a positional arg
+
+        args.push(kwargs[arg]);
+        delete kwargs[arg];
+      }
+
+      args.push(kwargs);
+    } else {
+      args = macroArgs;
+    }
+
+    return func.apply(_this, args);
+  }
+    </p>
+  
+
 
     
-      <p class="article-author">
-        By Keenan Payne
-        
-          30min | read
-        
-      </p>
+  <p class="article-author">
+    By Keenan Payne
     
+      30min | read
+    
+  </p>
+
   </header>
 
+  
   <div class="article-content">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim ex ut urna tempor blandit et maximus ante. Nam lacinia, mi eu interdum faucibus, massa odio condimentum ex, vel suscipit ipsum est vitae libero. Duis fermentum volutpat elit et commodo. Curabitur viverra magna urna, a feugiat ipsum ornare sed. Phasellus condimentum elementum condimentum. Quisque tempor, turpis sit amet molestie bibendum, mi velit consectetur augue, eu cursus neque nunc non sapien.</p>
-<img src="/dist/images/v60.jpg">
-<p>Phasellus auctor posuere rutrum. Sed massa urna, condimentum quis libero sed, varius tempor ante. Vestibulum tempus mauris in turpis porttitor, a posuere lacus viverra. Vestibulum ornare risus eget luctus pulvinar. Quisque elementum scelerisque massa in porta. Aliquam blandit aliquet felis, id finibus augue lacinia nec. Duis quam nisi, aliquet non pulvinar in, mollis eu lorem. In sit amet vestibulum tellus, finibus mollis nisl. Vestibulum lacus ipsum, lobortis ut justo in, ultrices elementum urna. Donec eget scelerisque velit.</p>
-<p>Nullam accumsan quam et arcu molestie commodo. Vestibulum sit amet euismod lorem. Sed condimentum lacus pulvinar ipsum condimentum dictum. Mauris varius congue odio quis lobortis. Nullam id consequat orci. In faucibus faucibus nisi. Phasellus risus mi, ornare eget vestibulum at, dignissim sed ipsum. Curabitur nec risus molestie, tempus enim ut, tincidunt nisi. Maecenas mollis tristique neque, pharetra blandit ex condimentum nec. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis ac pulvinar arcu, quis hendrerit arcu.</p>
+    function () {
+    for (var _len = arguments.length, macroArgs = new Array(_len), _key = 0; _key < _len; _key++) {
+      macroArgs[_key] = arguments[_key];
+    }
 
+    var argCount = numArgs(macroArgs);
+    var args;
+    var kwargs = getKeywordArgs(macroArgs);
+
+    if (argCount > argNames.length) {
+      args = macroArgs.slice(0, argNames.length); // Positional arguments that should be passed in as
+      // keyword arguments (essentially default values)
+
+      macroArgs.slice(args.length, argCount).forEach(function (val, i) {
+        if (i < kwargNames.length) {
+          kwargs[kwargNames[i]] = val;
+        }
+      });
+      args.push(kwargs);
+    } else if (argCount < argNames.length) {
+      args = macroArgs.slice(0, argCount);
+
+      for (var i = argCount; i < argNames.length; i++) {
+        var arg = argNames[i]; // Keyword arguments that should be passed as
+        // positional arguments, i.e. the caller explicitly
+        // used the name of a positional arg
+
+        args.push(kwargs[arg]);
+        delete kwargs[arg];
+      }
+
+      args.push(kwargs);
+    } else {
+      args = macroArgs;
+    }
+
+    return func.apply(_this, args);
+  }
   </div>
 
+
+  
   <p class="article-updated">Last updated on September 20, 2018 at 2:34pm</p>
+
 </article>
 
 </main>
