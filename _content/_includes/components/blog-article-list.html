@@ -1,10 +1,8 @@
 <div class="container" data-page-section>
-  <div class="articles">
-    <!-- <h1 class="articles-header">Blog</h1> -->
-
+  <div class="blogArticleList">
     {%- for post in collections.post -%}
-      <article class="article {% if not loop.first %} -border {% endif %}">
-        <h2 class="articles-desc-header">
+      <article class="article">
+        <h2>
           <a href="{{ post.url }}" title="{{ post.data.title }}">
             {{ post.data.title }}
           </a>
@@ -18,12 +16,20 @@
           {{ post.data.content | safe | truncate(500) }}
         </p>
 
-        <p class="article-readmore">
+        <p class="blogArticleList-readmore">
           <a href="{{ post.url }}" title="{{ post.data.title }}">
             Read more
           </a>
         </p>
       </article>
+
+      {% if not loop.first %}
+        <div class="squiggle -center"></div>
+      {% endif %}
+
+      {% if loop.last %}
+        <p class="blogArticleList-fin">Fin.</p>
+      {% endif %}
     {%- endfor -%}
   </div>
 </div>

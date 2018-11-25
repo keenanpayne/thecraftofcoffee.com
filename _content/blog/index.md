@@ -5,7 +5,7 @@ title: "Blog"
 
 sections:
   - page-header
-  - blog-articles
+  - blog-article-list
 
 page_title: Blog
 ---
