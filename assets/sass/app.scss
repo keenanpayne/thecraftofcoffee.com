@@ -25,7 +25,6 @@
 @import "atoms/buttons";
 @import "atoms/links";
 @import "atoms/lists";
-@import "atoms/squiggle";
 @import "atoms/typography";
 
 
@@ -39,6 +38,13 @@
 @import "globals/logo";
 @import "globals/navigation";
 @import "globals/sections";
+
+
+//
+// Delight
+// -------
+
+@import "delight/squiggle";
 
 
 //

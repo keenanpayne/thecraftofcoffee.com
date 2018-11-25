@@ -68,12 +68,6 @@ ul {
 li {
   list-style-type: circle; }
 
-.squiggle {
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/squiggle.svg");
-  background-size: 20%;
-  height: 18px;
-  max-width: 150px; }
-
 :root {
   font-size: 14px; }
   @media (min-width: 768px) {
@@ -250,6 +244,12 @@ body {
   max-width: 1260px;
   padding-left: 25px;
   padding-right: 25px; }
+
+.squiggle {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/squiggle.svg");
+  background-size: 20%;
+  height: 18px;
+  max-width: 150px; }
 
 @media (min-width: 768px) {
   .brewing {
