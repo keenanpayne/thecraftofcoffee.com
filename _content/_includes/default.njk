@@ -5,6 +5,10 @@
 </head>
 
 <body>
+  {# Macros #}
+  {% import "globals/navigation.html" as navigation with context %}
+
+  {# Includes #}
   {% include "globals/header.html" %}
 
   {% include "globals/main.html" %}

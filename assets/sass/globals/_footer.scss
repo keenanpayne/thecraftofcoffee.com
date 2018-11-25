@@ -26,12 +26,15 @@
   // -----------
 
   p {
-    font-size: 1rem;
     margin-bottom: 0;
     margin-top: 0;
 
     @media (max-width: $media-max-767) {
       margin-bottom: spacing(5);
+    }
+
+    @media (min-width: $media-min-768) {
+      font-size: .875rem;
     }
   }
 }
