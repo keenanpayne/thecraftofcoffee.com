@@ -26,9 +26,13 @@ $font-logo-secondary: 'Vampiro One', cursive;
 // Responsiveness
 // --------------
 
-// Media queries
-$media-max-767: 767px;
+// Min-width breakpoints
+$media-min-480: 480px;
 $media-min-768: 768px;
+$media-min-960: 960px;
+
+// Max-width breakpoints
+$media-max-767: 767px;
 
 
 //

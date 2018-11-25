@@ -5,30 +5,7 @@
 .resources {
   display: flex;
   flex-wrap: wrap;
-}
-
-.resource {
-  margin-bottom: ($spacing-section / 2);
-
-  @media (min-width: $media-min-768) {
-    width: 30%;
-
-    &:last-of-type {
-      margin-bottom: 0;
-    }
-
-    &:not(:first-of-type) {
-      padding-left: 5%;
-    }
-
-    &:nth-child(4n) {
-      padding-left: 0;
-    }
-
-    &:nth-child(n+4) {
-      margin-top: ($spacing-section / 2);
-    }
-  }
+  margin-bottom: -($spacing-section / 2);
 }
 
 .resources-header {
@@ -36,10 +13,29 @@
   max-width: 700px;
 
   > p {
-    margin-bottom: 0;
+    margin-bottom: ($spacing-section / 2);
+  }
+}
+
+
+//
+// Individual Resource
+// -------------------
+
+.resources-resource {
+  margin-bottom: ($spacing-section / 2);
+
+  @media (min-width: $media-min-480) {
+    width: 50%;
   }
 
-  .squiggle {
-    margin-top: ($spacing-section / 2);
+  @media (min-width: $media-min-960) {
+    width: 33.333%;
+  }
+}
+
+.resources-resource-content {
+  @media (min-width: $media-min-480) {
+    padding-right: spacing(10);
   }
 }
