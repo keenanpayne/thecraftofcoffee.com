@@ -4,9 +4,15 @@
 
 .squiggle {
   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/squiggle.svg");
-  background-size: 20%;
+  background-size: 30px;
   height: 18px;
   max-width: 150px;
+
+  // Modifiers
+  &.-center {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 // TODO: Maybe I can add an animation when you hover over it

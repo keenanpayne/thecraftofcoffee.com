@@ -9,7 +9,7 @@ a {
   text-decoration: none;
 
   &:hover {
-    text-decoration: none;
+    text-decoration: underline;
   }
 
 
@@ -27,6 +27,7 @@ a {
     &:hover {
       background-size: 100% 100%;
       color: getColor(type, inverted);
+      text-decoration: none;
     }
   }
 
@@ -46,6 +47,8 @@ a {
     }
 
     &:hover {
+      text-decoration: none;
+
       &::after {
         opacity: 1;
       }

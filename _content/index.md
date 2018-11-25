@@ -5,7 +5,7 @@ title: "Home"
 
 # Sections
 sections:
-  - page-header
+  - background-page-header
   - resources
 
 page_title: Resources for brewing better coffee

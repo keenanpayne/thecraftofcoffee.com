@@ -25,6 +25,8 @@
 
   @if ($active == false) {
     &:hover {
+      text-decoration: none;
+      
       @include link_underline-hover();
     }
   } @else {

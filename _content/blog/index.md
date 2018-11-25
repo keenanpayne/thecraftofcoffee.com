@@ -8,5 +8,4 @@ sections:
   - blog-articles
 
 page_title: Blog
-page_description:
 ---

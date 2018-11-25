@@ -19,7 +19,7 @@ a {
   position: relative;
   text-decoration: none; }
   a:hover {
-    text-decoration: none; }
+    text-decoration: underline; }
   p a,
   ul a {
     background: linear-gradient(black, black) bottom no-repeat;
@@ -28,7 +28,8 @@ a {
     p a:hover,
     ul a:hover {
       background-size: 100% 100%;
-      color: #ffffff; }
+      color: #ffffff;
+      text-decoration: none; }
   a.-external::after {
     background: url("../dist/images/external-link.svg");
     background-size: cover;
@@ -40,8 +41,10 @@ a {
     top: 0;
     transition: opacity 250ms;
     width: .75em; }
-  a.-external:hover::after {
-    opacity: 1; }
+  a.-external:hover {
+    text-decoration: none; }
+    a.-external:hover::after {
+      opacity: 1; }
   a.-underline {
     background: transparent;
     position: relative; }
@@ -56,6 +59,7 @@ a {
       transform: scale(0.5) translateY(10px);
       transition: transform 125ms, background-color 125ms; }
     a.-underline:hover {
+      text-decoration: none;
       color: #333333; }
       a.-underline:hover::after {
         background-color: rgba(0, 0, 0, 0.8);
@@ -249,9 +253,76 @@ body {
 
 .squiggle {
   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/squiggle.svg");
-  background-size: 20%;
+  background-size: 30px;
   height: 18px;
   max-width: 150px; }
+  .squiggle.-center {
+    margin-left: auto;
+    margin-right: auto; }
+
+.backgroundPageHeader {
+  align-items: flex-end;
+  background: url("../dist/images/background.jpg") center center;
+  background-size: cover;
+  display: flex;
+  padding: 25px 25px 15px 15px;
+  position: relative; }
+  @media (min-width: 768px) {
+    .backgroundPageHeader {
+      height: 400px;
+      margin-left: 25px;
+      margin-right: 25px;
+      max-width: 1260px;
+      padding: 25px; } }
+  @media (min-width: 1285px) {
+    .backgroundPageHeader {
+      margin-left: auto;
+      margin-right: auto; } }
+  .backgroundPageHeader:after {
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    opacity: .15;
+    z-index: 1; }
+
+.backgroundPageHeader-content {
+  border: 1px solid #d9a675;
+  padding: 2rem 0 4rem calc(1rem + 20px);
+  position: relative;
+  width: 100%;
+  z-index: 1; }
+  @media (min-width: 768px) {
+    .backgroundPageHeader-content {
+      max-width: 700px; } }
+  .backgroundPageHeader-content:before, .backgroundPageHeader-content:after {
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%; }
+  .backgroundPageHeader-content:before {
+    left: 6px;
+    outline: 1px solid #d9a675;
+    top: -6px; }
+  .backgroundPageHeader-content:after {
+    background-color: white;
+    box-shadow: 1px 0px 9px 3px rgba(51, 51, 51, 0.1);
+    left: 12px;
+    top: -12px;
+    z-index: -1; }
+
+.backgroundPageHeader-title {
+  font-weight: 700;
+  margin-top: 0; }
+
+.pageHeader-description {
+  margin-bottom: 0;
+  max-width: 95%; }
 
 @media (min-width: 768px) {
   .brewing {
@@ -276,68 +347,7 @@ body {
   text-align: center; }
 
 .pageHeader {
-  align-items: flex-end;
-  background: url("../dist/images/background.jpg") center center;
-  background-size: cover;
-  display: flex;
-  padding: 25px 25px 15px 15px;
-  position: relative; }
-  @media (min-width: 768px) {
-    .pageHeader {
-      height: 400px;
-      margin-left: 25px;
-      margin-right: 25px;
-      max-width: 1260px;
-      padding: 25px; } }
-  @media (min-width: 1285px) {
-    .pageHeader {
-      margin-left: auto;
-      margin-right: auto; } }
-  .pageHeader:after {
-    background-color: black;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    content: '';
-    opacity: .15;
-    z-index: 1; }
-
-.pageHeader-content {
-  border: 1px solid #d9a675;
-  padding: 2rem 0 4rem calc(1rem + 20px);
-  position: relative;
-  width: 100%;
-  z-index: 1; }
-  @media (min-width: 768px) {
-    .pageHeader-content {
-      max-width: 700px; } }
-  .pageHeader-content:before, .pageHeader-content:after {
-    content: '';
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%; }
-  .pageHeader-content:before {
-    left: 6px;
-    outline: 1px solid #d9a675;
-    top: -6px; }
-  .pageHeader-content:after {
-    background-color: white;
-    box-shadow: 1px 0px 9px 3px rgba(51, 51, 51, 0.1);
-    left: 12px;
-    top: -12px;
-    z-index: -1; }
-
-.pageHeader-title {
-  font-weight: 700;
-  margin-top: 0; }
-
-.pageHeader-description {
-  margin-bottom: 0;
-  max-width: 95%; }
+  text-align: center; }
 
 @media (min-width: 768px) {
   .article figure {
