@@ -3,8 +3,8 @@
 //
 // This will give a link a custom-styled bottom underline
 //
-// @param `$active` if the underline is active without any user interaction
-//                  (e.g., hover)
+// @param `$active` if the underline is displayed without any user interaction
+//                  (e.g., without mousing over)
 //
 
 @mixin link_underline($active: false) {
@@ -12,7 +12,7 @@
   position: relative;
 
   &::after {
-    background: rgba(black, 0);
+    background-color: rgba(black, 0);
     bottom: -3px;
     content: '';
     height: 2px;
@@ -20,7 +20,7 @@
     position: absolute;
     right: 0;
     transform: scale(.5) translateY(10px);
-    transition: transform .15s, background .15s;
+    transition: transform $transition-short, background-color $transition-short;
   }
 
   @if ($active == false) {
@@ -33,11 +33,11 @@
 }
 
 @mixin link_underline-hover() {
-  color: black;
+  color: getColor(type, base);
 
   &::after {
-    background: rgba(black, .8);
+    background-color: rgba(black, .8);
     transform: scale(1) translateY(0);
-    transition-duration: .2s;
+    transition-duration: $transition-short;
   }
 }

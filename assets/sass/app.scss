@@ -10,11 +10,12 @@
 @import "helpers/variables";
 
 // Functions
+@import "helpers/functions/getColor";
 @import "helpers/functions/spacing";
 
 // Mixins
 @import "helpers/mixins/container";
-@import "helpers/mixins/link-underline";
+@import "helpers/mixins/link_underline";
 
 
 //

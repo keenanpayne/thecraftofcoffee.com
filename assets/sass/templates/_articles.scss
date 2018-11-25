@@ -10,7 +10,7 @@
   }
 
   figcaption {
-    color: #666;
+    color: getColor(type, subtle);
     font-size: .875rem;
     font-style: italic;
     text-align: right;
@@ -36,14 +36,13 @@
 }
 
 .article-lead {
-  color: #202020;
+  color: getColor(type, heading);
   font-size: 1.25rem;
   margin: 0 auto;
-  color: #202020;
 }
 
 .article-author {
-  color: #555;
+  color: getColor(type, subtle);
   font-size: .875rem;
   font-style: italic;
 }
@@ -106,7 +105,7 @@
 }
 
 .article-date {
-  color: #666;
+  color: getColor(type, subtle);
   font-size: .875rem;
   font-style: italic;
   margin-bottom: 1rem;

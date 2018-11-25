@@ -1,0 +1,13 @@
+//
+// @function getColor
+//
+// Easily retrieve colors from the $colors map
+//
+// @param $color {string} name of the color
+// @param $shade {string} name of the shade
+// @returns {string} value of the requested color
+//
+
+@function getColor($color, $shade: "base") {
+  @return map-get(map-get($colors, $color), $shade);
+}

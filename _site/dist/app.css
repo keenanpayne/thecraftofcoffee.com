@@ -14,7 +14,7 @@ button,
     display: none; }
 
 a {
-  color: black;
+  color: #333333;
   display: inline-block;
   position: relative;
   text-decoration: none; }
@@ -28,7 +28,7 @@ a {
     p a:hover,
     ul a:hover {
       background-size: 100% 100%;
-      color: white; }
+      color: #ffffff; }
   a.-external::after {
     background: url("../dist/images/external-link.svg");
     background-size: cover;
@@ -46,7 +46,7 @@ a {
     background: transparent;
     position: relative; }
     a.-underline::after {
-      background: rgba(0, 0, 0, 0);
+      background-color: rgba(0, 0, 0, 0);
       bottom: -3px;
       content: '';
       height: 2px;
@@ -54,13 +54,13 @@ a {
       position: absolute;
       right: 0;
       transform: scale(0.5) translateY(10px);
-      transition: transform .15s, background .15s; }
+      transition: transform 125ms, background-color 125ms; }
     a.-underline:hover {
-      color: black; }
+      color: #333333; }
       a.-underline:hover::after {
-        background: rgba(0, 0, 0, 0.8);
+        background-color: rgba(0, 0, 0, 0.8);
         transform: scale(1) translateY(0);
-        transition-duration: .2s; }
+        transition-duration: 125ms; }
 
 ul {
   padding-left: 0; }
@@ -84,7 +84,7 @@ li {
       font-size: 18px; } }
 
 body {
-  color: #333;
+  color: #333333;
   font-family: trade-gothic-next, sans-serif;
   font-weight: 400;
   line-height: 1.5; }
@@ -102,6 +102,7 @@ h1,
 h2,
 h3,
 h4 {
+  color: #101010;
   font-family: miller-headline, serif;
   font-weight: inherit;
   margin: 1.414rem 0 0.5rem;
@@ -214,9 +215,9 @@ body {
   .navigation span.-active {
     background: transparent;
     position: relative;
-    color: black; }
+    color: #333333; }
     .navigation span.-active::after {
-      background: rgba(0, 0, 0, 0);
+      background-color: rgba(0, 0, 0, 0);
       bottom: -3px;
       content: '';
       height: 2px;
@@ -224,11 +225,11 @@ body {
       position: absolute;
       right: 0;
       transform: scale(0.5) translateY(10px);
-      transition: transform .15s, background .15s; }
+      transition: transform 125ms, background-color 125ms; }
     .navigation span.-active::after {
-      background: rgba(0, 0, 0, 0.8);
+      background-color: rgba(0, 0, 0, 0.8);
       transform: scale(1) translateY(0);
-      transition-duration: .2s; }
+      transition-duration: 125ms; }
   .navigation.-inline {
     text-align: right; }
     .navigation.-inline li {
@@ -341,7 +342,7 @@ body {
     margin-left: -10rem; } }
 
 .article figcaption {
-  color: #666;
+  color: #666666;
   font-size: .875rem;
   font-style: italic;
   text-align: right; }
@@ -362,13 +363,12 @@ body {
   margin-bottom: 1.5rem; }
 
 .article-lead {
-  color: #202020;
+  color: #101010;
   font-size: 1.25rem;
-  margin: 0 auto;
-  color: #202020; }
+  margin: 0 auto; }
 
 .article-author {
-  color: #555;
+  color: #666666;
   font-size: .875rem;
   font-style: italic; }
 
@@ -411,7 +411,7 @@ body {
   margin-bottom: 1rem; }
 
 .article-date {
-  color: #666;
+  color: #666666;
   font-size: .875rem;
   font-style: italic;
   margin-bottom: 1rem;
