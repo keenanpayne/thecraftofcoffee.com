@@ -10,12 +10,12 @@ layout: default
       {{ title }}
     </h1>
 
-    {{ article.lead() }}
+    {{ article.lead(lead) }}
 
-    {{ article.meta() }}
+    {{ article.meta(author) }}
   </header>
 
-  {{ article.content() }}
+  {{ article.content(content) }}
 
-  {{ article.updated() }}
+  {{ article.updated(date) }}
 </article>

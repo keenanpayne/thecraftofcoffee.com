@@ -10,11 +10,15 @@
           </a>
         </h2>
 
-        {{ article.meta() }}
+        {{ article.meta(post.data.author) }}
 
-        <p class="article-excerpt">
-          {{ post.data.content | safe | truncate(500) }}
-        </p>
+        {% if post.data.lead %}
+          {{ article.lead(lead) }}
+        {% else %}
+          <p class="article-excerpt">
+            {{ post.data.content | safe | truncate(500) }}
+          </p>
+        {% endif %}
 
         <p class="blogArticleList-readmore">
           <a href="{{ post.url }}" title="{{ post.data.title }}">

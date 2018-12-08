@@ -1,26 +1,31 @@
-{% macro meta() %}
+{% macro meta(author) %}
   <p class="article-author">
-    By {{ author }}
-    {% if read_time %}
-      {{ read_time }} | read
+    {% if author %}
+      By {{ author }}
     {% endif %}
+    <span data-read-time></span> | read
   </p>
 {% endmacro %}
 
-{% macro lead() %}
-  {% if lead %}
+{% macro lead(content) %}
+  {% if content %}
     <p class="article-lead">
-      {{ lead }}
+      {{ content }}
     </p>
   {% endif %}
 {% endmacro %}
 
-{% macro updated() %}
-  <p class="article-updated">Last updated on September 20, 2018 at 2:34pm</p>
+{% macro updated(when) %}
+  <p class="article-updated">
+    Last updated on
+    {% if when %}
+      {{ when }}
+    {% endif %}
+  </p>
 {% endmacro %}
 
-{% macro content() %}
+{% macro content(text) %}
   <div class="article-content">
-    {{ content | safe }}
+    {{ text | safe }}
   </div>
 {% endmacro %}
