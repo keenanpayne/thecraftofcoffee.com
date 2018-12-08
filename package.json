@@ -9,6 +9,9 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.5.3",
+    "@babel/cli": "^7.2.0",
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
     "autoprefixer": "^8.1.0",
     "cssmin": "^0.4.3",
     "imagemin": "^5.2.2",
@@ -22,11 +25,12 @@
   "scripts": {
     "start": "npm run build",
     "serve": "npm run eleventy:watch",
-    "build": "npm run assets:images && npm run assets:sass:watch",
+    "build": "npm run assets:images && npm run assets:watch",
     "eleventy:build": "eleventy --input=_content --output=_site",
     "eleventy:watch": "eleventy --input=_content --output=_site --watch --serve",
     "assets:sass": "node-sass assets/sass/app.scss _site/dist/app.css | postcss --use autoprefixer < _site/dist/app.css -b \"last 2 versions\" | cssmin > _site/dist/app.min.css",
-    "assets:sass:watch": "watch 'npm run assets:sass' 'assets/sass/'",
+    "assets:watch": "watch 'npm run assets:sass && npm run assets:js' 'assets/'",
+    "assets:js": "babel assets/js/ -d _site/dist/js/",
     "assets:images": "node utils/images.js"
   }
 }
