@@ -42,7 +42,7 @@
 // -----------
 
 .backgroundPageHeader-content {
-  border: 1px solid #d9a675;
+  border: 1px solid getColor(ui, lines);
   padding: 2rem 0 4rem calc(1rem + 20px);
   position: relative;
   width: 100%;

@@ -17,6 +17,12 @@
   }
 }
 
+// Update selection colors
+::selection {
+  background: rgba(getColor(ui, lines), .65);
+  color: black;
+}
+
 
 //
 // Base Layout
