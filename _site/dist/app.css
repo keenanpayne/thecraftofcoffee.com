@@ -105,23 +105,28 @@ h4 {
   font-weight: inherit;
   margin: 1.414rem 0 0.5rem;
   line-height: 1.2; }
+  h1.-xl,
+  h2.-xl,
+  h3.-xl,
+  h4.-xl {
+    font-size: 4.20873rem; }
 
 h1 {
   margin-top: 0;
-  font-size: 3.175rem; }
+  font-size: 3.15733rem; }
 
 h2 {
-  font-size: 2.369rem; }
+  font-size: 2.36859rem; }
 
 h3 {
-  font-size: 1.777rem;
+  font-size: 1.77689rem;
   font-variant: all-small-caps; }
 
 h4 {
   font-size: 1.333rem; }
 
 small {
-  font-size: 0.75rem; }
+  font-size: 0.75019rem; }
 
 * {
   box-sizing: border-box; }
@@ -157,7 +162,7 @@ body {
         margin-bottom: 25px; } }
     @media (min-width: 768px) {
       .g-footer p {
-        font-size: .875rem; } }
+        font-size: 0.75019rem; } }
 
 .g-header {
   margin-left: auto;
@@ -335,7 +340,7 @@ body {
 
 .blogArticleList-fin {
   font-family: miller-headline, serif;
-  font-size: 1rem;
+  font-size: 0.75019rem;
   font-style: italic;
   text-align: center; }
 
@@ -370,7 +375,7 @@ body {
 
 .article figcaption {
   color: #666666;
-  font-size: .875rem;
+  font-size: 0.75019rem;
   font-style: italic;
   text-align: right; }
 
@@ -386,26 +391,28 @@ body {
   text-align: center; }
 
 .article-title {
-  font-size: 3rem;
   margin-bottom: 1.5rem; }
 
 .article-lead {
   color: #101010;
-  font-size: 1.25rem;
+  font-size: 1.333rem;
   margin: 0 auto; }
 
 .article-author {
   color: #666666;
-  font-size: .875rem;
+  font-size: 0.75019rem;
   font-style: italic; }
 
 .article-content {
   margin-left: auto;
   margin-right: auto;
   max-width: 768px; }
+  @media (min-width: 1440px) {
+    .article-content {
+      max-width: 840px; } }
   .article-content p:first-child:first-letter {
     float: left;
-    font-size: 5rem;
+    font-size: 5.61023rem;
     font-weight: bold;
     line-height: 1;
     padding-top: .25rem;
@@ -416,14 +423,14 @@ body {
 
 .article-updated {
   font-style: italic;
-  font-size: .875rem;
+  font-size: 0.75019rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
   text-align: right; }
 
 .article-date {
   color: #666666;
-  font-size: .875rem;
+  font-size: 0.75019rem;
   font-style: italic;
   margin-bottom: 1rem;
   margin-top: 0; }

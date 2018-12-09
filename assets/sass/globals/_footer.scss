@@ -34,7 +34,7 @@
     }
 
     @media (min-width: $media-min-768) {
-      font-size: .875rem;
+      font-size: typeScale(1);
     }
   }
 }

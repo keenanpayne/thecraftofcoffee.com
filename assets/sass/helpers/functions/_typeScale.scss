@@ -1,0 +1,13 @@
+//
+// @function typeScale
+//
+// Function to easily retrieve sizes from a scale.
+//
+// @param $size {integer}
+// @param $ratio {integer}
+// @returns {integer}
+//
+
+@function typeScale($size, $ratio: $scale-ratio) {
+  @return pow($ratio, $size - 2) * 1rem;
+}

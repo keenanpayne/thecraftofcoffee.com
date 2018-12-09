@@ -6,6 +6,7 @@
   text-align: right;
 
   @media (min-width: $media-min-768) {
+    // Hard-coded font-size for the navigation
     font-size: .875rem;
     text-align: right;
   }

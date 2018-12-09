@@ -11,7 +11,7 @@
 
   figcaption {
     color: getColor(type, subtle);
-    font-size: .875rem;
+    font-size: typeScale(1);
     font-style: italic;
     text-align: right;
   }
@@ -31,19 +31,18 @@
 }
 
 .article-title {
-  font-size: 3rem;
   margin-bottom: 1.5rem;
 }
 
 .article-lead {
   color: getColor(type, heading);
-  font-size: 1.25rem;
+  font-size: typeScale(3);
   margin: 0 auto;
 }
 
 .article-author {
   color: getColor(type, subtle);
-  font-size: .875rem;
+  font-size: typeScale(1);
   font-style: italic;
 }
 
@@ -52,10 +51,14 @@
   margin-right: auto;
   max-width: 768px;
 
+  @media (min-width: $media-min-1440) {
+    max-width: 840px;
+  }
+
   p {
     &:first-child:first-letter {
       float: left;
-      font-size: 5rem;
+      font-size: typeScale(8);
       font-weight: bold;
       line-height: 1;
       padding-top: .25rem;
@@ -73,7 +76,7 @@
 
 .article-updated {
   font-style: italic;
-  font-size: .875rem;
+  font-size: typeScale(1);
   margin-bottom: 2rem;
   margin-top: 2rem;
   text-align: right;
@@ -81,7 +84,7 @@
 
 .article-date {
   color: getColor(type, subtle);
-  font-size: .875rem;
+  font-size: typeScale(1);
   font-style: italic;
   margin-bottom: 1rem;
   margin-top: 0;

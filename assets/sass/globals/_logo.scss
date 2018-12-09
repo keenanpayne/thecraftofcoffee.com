@@ -16,6 +16,7 @@
 .logo {
   color: black;
   font-family: $font-logo-primary;
+  // Hard-coded font-size specifically for the logo
   font-size: 1.75rem;
   line-height: 1;
   text-align: center;
@@ -23,6 +24,7 @@
   span {
     display: block;
     font-family: $font-logo-secondary;
+    // Hard-coded font-size specifically for the logo
     font-size: .55em;
     font-style: italic;
     font-weight: lighter;

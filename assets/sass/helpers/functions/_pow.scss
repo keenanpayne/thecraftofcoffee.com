@@ -1,0 +1,25 @@
+//
+// @function pow
+//
+// Easily retrieve colors from the $colors map
+//
+// @param $number {integer}
+// @param $exponent {integer}
+// @returns {integer}
+//
+
+@function pow($number, $exponent) {
+  $value: 1;
+
+  @if $exponent > 0 {
+    @for $i from 1 through $exponent {
+      $value: $value * $number;
+    }
+  } @else if $exponent < 0 {
+    @for $i from 1 through -$exponent {
+      $value: $value / $number;
+    }
+  }
+
+  @return $value;
+}
