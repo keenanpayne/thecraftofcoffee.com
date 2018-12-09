@@ -11,9 +11,13 @@ var ReadingTime = function ReadingTime() {
    * @function calculateReadingTime()
    */
   function calculateReadingTime() {
-    var numberWords = document.querySelector('.article-content').innerHTML.split(' ').length;
-    var wordLength = numberWords / 200;
-    return Math.floor(wordLength);
+    var article = document.querySelector('.article-content');
+
+    if (article) {
+      var numberWords = article.innerHTML.split(' ').length;
+      var wordLength = numberWords / 200;
+      return Math.floor(wordLength);
+    }
   }
   /**
    * @function outputReadingTime()
@@ -22,9 +26,9 @@ var ReadingTime = function ReadingTime() {
 
   function outputReadingTime() {
     var element = document.querySelector('[data-read-time]');
-    var time = calculateReadingTime();
 
     if (element) {
+      var time = calculateReadingTime();
       element.textContent = time;
     }
   }
