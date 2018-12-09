@@ -22,7 +22,7 @@ body {
 }
 
 p {
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   margin-bottom: 1.3rem;
 
   // Modifiers
@@ -47,7 +47,11 @@ h4 {
   line-height: 1.2;
 
   &.-xl {
-    font-size: typeScale(7);
+    font-size: typeScale(6);
+
+    @media (min-width: $media-min-1440) {
+      font-size: typeScale(7);
+    }
   }
 }
 

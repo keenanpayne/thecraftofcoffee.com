@@ -1,0 +1,10 @@
+//
+// Container
+// =============================================================================
+
+.container {
+  @include container;
+
+  padding-left: spacing(5);
+  padding-right: spacing(5);
+}

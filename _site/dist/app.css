@@ -22,29 +22,16 @@ a {
     text-decoration: underline; }
   p a,
   ul a {
-    background: linear-gradient(black, black) bottom no-repeat;
+    background: linear-gradient(to bottom, black 0%, black 100%) bottom no-repeat;
+    background-position: 0 100%;
+    background-repeat: repeat-x;
     background-size: 100% 2px;
-    transition: background-size 125ms; }
+    transition: background-size 200ms; }
     p a:hover,
     ul a:hover {
       background-size: 100% 100%;
       color: #ffffff;
       text-decoration: none; }
-  a.-external::after {
-    background: url("../dist/images/external-link.svg");
-    background-size: cover;
-    content: '';
-    height: .75em;
-    opacity: .35;
-    position: absolute;
-    right: -1em;
-    top: 0;
-    transition: opacity 250ms;
-    width: .75em; }
-  a.-external:hover {
-    text-decoration: none; }
-    a.-external:hover::after {
-      opacity: 1; }
   a.-underline {
     background: transparent;
     position: relative; }
@@ -65,6 +52,21 @@ a {
         background-color: rgba(0, 0, 0, 0.8);
         transform: scale(1) translateY(0);
         transition-duration: 125ms; }
+  a.-external::after {
+    background: url("../dist/images/external-link.svg");
+    background-size: cover;
+    content: '';
+    height: .75em;
+    opacity: .35;
+    position: absolute;
+    right: -1em;
+    top: 0;
+    transition: opacity 250ms;
+    width: .75em; }
+  a.-external:hover {
+    text-decoration: none; }
+    a.-external:hover::after {
+      opacity: 1; }
 
 ul {
   padding-left: 0; }
@@ -88,7 +90,7 @@ body {
   line-height: 1.5; }
 
 p {
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   margin-bottom: 1.3rem; }
   p.-highlight {
     background-image: linear-gradient(-100deg, rgba(250, 246, 133, 0.3), rgba(250, 246, 133, 0.7) 95%, rgba(250, 246, 133, 0.1));
@@ -109,7 +111,13 @@ h4 {
   h2.-xl,
   h3.-xl,
   h4.-xl {
-    font-size: 4.20873rem; }
+    font-size: 3.15733rem; }
+    @media (min-width: 1440px) {
+      h1.-xl,
+      h2.-xl,
+      h3.-xl,
+      h4.-xl {
+        font-size: 4.20873rem; } }
 
 h1 {
   margin-top: 0;
@@ -164,9 +172,6 @@ body {
     @media (max-width: 767px) {
       .g-footer p {
         margin-bottom: 25px; } }
-    @media (min-width: 768px) {
-      .g-footer p {
-        font-size: 0.75019rem; } }
 
 .g-header {
   margin-left: auto;
@@ -253,13 +258,6 @@ body {
 
 [data-page-section]:last-of-type {
   margin-bottom: 5rem; }
-
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1260px;
-  padding-left: 25px;
-  padding-right: 25px; }
 
 .squiggle {
   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/squiggle.svg");
@@ -380,8 +378,7 @@ body {
 .article figcaption {
   color: #666666;
   font-size: 0.75019rem;
-  font-style: italic;
-  text-align: right; }
+  font-style: italic; }
 
 .article img {
   max-width: 100%;
@@ -404,8 +401,7 @@ body {
 
 .article-author {
   color: #666666;
-  font-size: 0.75019rem;
-  font-style: italic; }
+  font-size: 0.75019rem; }
 
 .article-content {
   margin-left: auto;
@@ -414,6 +410,10 @@ body {
   @media (min-width: 1440px) {
     .article-content {
       max-width: 840px; } }
+  .article-content h2 {
+    margin-top: 3.15733rem; }
+  .article-content h3 {
+    margin-top: 1.77689rem; }
   .article-content p:first-child:first-letter {
     float: left;
     font-size: 5.61023rem;
@@ -435,7 +435,6 @@ body {
 .article-date {
   color: #666666;
   font-size: 0.75019rem;
-  font-style: italic;
   margin-bottom: 1rem;
   margin-top: 0; }
 

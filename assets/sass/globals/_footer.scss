@@ -32,9 +32,5 @@
     @media (max-width: $media-max-767) {
       margin-bottom: spacing(5);
     }
-
-    @media (min-width: $media-min-768) {
-      font-size: typeScale(1);
-    }
   }
 }

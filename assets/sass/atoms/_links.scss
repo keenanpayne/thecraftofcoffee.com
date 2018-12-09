@@ -20,15 +20,23 @@ a {
   // Content links
   p &,
   ul & {
-    background: linear-gradient(black, black) bottom no-repeat;
+    background: linear-gradient(to bottom, black 0%, black 100%) bottom no-repeat;
+    background-position: 0 100%;
+    background-repeat: repeat-x;
     background-size: 100% 2px;
-    transition: background-size $transition-short;
+    transition: background-size $transition-medium;
 
     &:hover {
       background-size: 100% 100%;
       color: getColor(type, inverted);
       text-decoration: none;
     }
+  }
+
+
+  // Underline
+  &.-underline {
+    @include link_underline();
   }
 
   // External links
@@ -53,10 +61,5 @@ a {
         opacity: 1;
       }
     }
-  }
-
-  // Underline
-  &.-underline {
-    @include link_underline();
   }
 }

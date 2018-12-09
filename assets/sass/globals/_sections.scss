@@ -1,5 +1,5 @@
 //
-// Globals
+// Sections
 // =============================================================================
 
 [data-page-section] {
@@ -10,11 +10,4 @@
   &:last-of-type {
     margin-bottom: $spacing-section;
   }
-}
-
-.container {
-  @include container;
-
-  padding-left: spacing(5);
-  padding-right: spacing(5);
 }
