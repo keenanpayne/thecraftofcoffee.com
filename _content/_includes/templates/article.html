@@ -1,9 +1,12 @@
-{% macro meta(author) %}
+{% macro meta(author, time) %}
   <p class="article-author">
     {% if author %}
       By {{ author }}
     {% endif %}
-    <span data-read-time></span> | read
+
+    {% if time !== false %}
+      | <span data-read-time></span> minute read
+    {% endif %}
   </p>
 {% endmacro %}
 

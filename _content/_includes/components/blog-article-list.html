@@ -10,7 +10,7 @@
           </a>
         </h2>
 
-        {{ article.meta(post.data.author) }}
+        {{ article.meta(post.data.author, false) }}
 
         {% if post.data.lead %}
           {{ article.lead(lead) }}
@@ -27,9 +27,7 @@
         </p>
       </article>
 
-      {% if not loop.first %}
-        <div class="squiggle -center"></div>
-      {% endif %}
+      <div class="squiggle -center"></div>
 
       {% if loop.last %}
         <p class="blogArticleList-fin">Fin.</p>
