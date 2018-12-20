@@ -85,7 +85,7 @@ li {
 
 body {
   color: #333333;
-  font-family: trade-gothic-next, sans-serif;
+  font-family: trade-gothic-next, Helvetica, Arial, sans-serif;
   font-weight: 400;
   line-height: 1.5; }
 
@@ -205,7 +205,7 @@ body {
   text-align: center; }
   .logo span {
     display: block;
-    font-family: "Vampiro One", cursive;
+    font-family: "Vampiro One", Helvetica, Arial, sans-serif;
     font-size: .55em;
     font-style: italic;
     font-weight: lighter; }
