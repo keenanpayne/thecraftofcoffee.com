@@ -5,10 +5,10 @@
   "description": "The website for The Craft of Coffee",
   "homepage": "https://thecraftofcoffee.com",
   "engines": {
-    "node": "<=9.7.1"
+    "node": "<=11.4.0"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^0.5.3",
+    "@11ty/eleventy": "^0.6.0",
     "@babel/cli": "^7.2.0",
     "@babel/core": "^7.2.0",
     "@babel/preset-env": "^7.2.0",
