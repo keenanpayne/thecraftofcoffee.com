@@ -1,7 +1,31 @@
-{% for site in eleventysites -%}
+<!--
+  Working with resources:
+    1.  In the YAML, specify which resources we want to include:
+
+          resources:
+            - general
+            - brewing
+            - methods
+            - ...etc
+
+        We can then loop over this list and output each of the resources into
+        the correct layout
+
+        Alternatively, we could do something like:
+
+          resources:
+            - all
+
+        Which would loop over every single resource (JSON file) and output them
+        into our template. (I'm not entirely sure how we might do this -- how do
+        I loop over every JSON file in the `_data/resources` directory?)
+
+    2. For each resource 
+-->
+
+{% for site in resources.general -%}
   {{ site.Name }}
 {% endfor -%}
-
 
 <section class="container" data-page-section>
   <header class="resources-header">
