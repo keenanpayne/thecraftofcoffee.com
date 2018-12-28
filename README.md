@@ -3,8 +3,8 @@
 ## Table of Contents
 1. [Tooling](#tooling)
 2. [Development](#development)
-  - [Build Tools](#build-tools)
-  - [Folder Structure](#folder-structure)
+    1. [Build Tools](#build-tools)
+    2. [Folder Structure](#folder-structure)
 
 ## Tooling
 
