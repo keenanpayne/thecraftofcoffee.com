@@ -1,110 +1,89 @@
-<!--
-  Working with resources:
-    1.  In the YAML, specify which resources we want to include:
+{% for topic in resources.general -%}
+  <section class="container" data-page-section>
+    <header class="resources-header">
+      <h1>{{ topic.name }}</h1>
 
-          resources:
-            - general
-            - brewing
-            - methods
-            - ...etc
+      <p>{{ topic.description }}</p>
 
-        We can then loop over this list and output each of the resources into
-        the correct layout
+      <aside class="squiggle"></aside>
+    </header>
 
-        Alternatively, we could do something like:
+    <div class="resources">
+      {% for section in topic.sections %}
+        <div class="resources-resource">
+          <div class="resources-resource-content">
+            <h3>{{ section.name }}</h3>
 
-          resources:
-            - all
+            <p>{{ section.description }}</p>
 
-        Which would loop over every single resource (JSON file) and output them
-        into our template. (I'm not entirely sure how we might do this -- how do
-        I loop over every JSON file in the `_data/resources` directory?)
+            <ul>
+              {% for item in section.items %}
+                <li>
+                  <a href="#" title="" class="-external">
+                    {{ item.name }}
+                  </a>
+                </li>
+              {% endfor -%}
+            </ul>
+          </div>
+        </div>
+      {% endfor -%}
 
-    2. For each resource 
--->
+      <div class="resources-resource">
+        <div class="resources-resource-content">
+        <h3>Brewing Methods</h3>
 
-{% for site in resources.general -%}
-  {{ site.Name }}
+        <p>This is a description about the section of information.</p>
+
+        <ul>
+          <li>
+            <a href="#" title="">Link title here</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+
+      <div class="resources-resource">
+        <div class="resources-resource-content">
+        <h3>Brewing Methods</h3>
+
+        <p>This is a description about the section of information.</p>
+
+        <ul>
+          <li>
+            <a href="#" title="">Link title here</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+
+      <div class="resources-resource">
+        <div class="resources-resource-content">
+        <h3>Brewing Methods</h3>
+
+        <p>This is a description about the section of information.</p>
+
+        <ul>
+          <li>
+            <a href="#" title="">Link title here</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+
+      <div class="resources-resource">
+        <div class="resources-resource-content">
+        <h3>Brewing Methods</h3>
+
+        <p>This is a description about the section of information.</p>
+
+        <ul>
+          <li>
+            <a href="#" title="">Link title here</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </div>
+  </section>
 {% endfor -%}
-
-<section class="container" data-page-section>
-  <header class="resources-header">
-    <h1>Hario v60</h1>
-
-    <p>This is a high-level description of the topic at hand. A few sentences describing what our subject is and a little history on the subject.</p>
-
-    <aside class="squiggle"></aside>
-  </header>
-
-  <div class="resources">
-    <div class="resources-resource">
-      <div class="resources-resource-content">
-      <h3>The Basics</h3>
-
-      <p>This is a description about the section of information.</p>
-
-      <ul>
-        <li>
-          <a href="#" title="" class="-external">Link title here</a>
-        </li>
-      </ul>
-    </div>
-    </div>
-
-    <div class="resources-resource">
-      <div class="resources-resource-content">
-      <h3>Brewing Methods</h3>
-
-      <p>This is a description about the section of information.</p>
-
-      <ul>
-        <li>
-          <a href="#" title="">Link title here</a>
-        </li>
-      </ul>
-    </div>
-    </div>
-
-    <div class="resources-resource">
-      <div class="resources-resource-content">
-      <h3>Brewing Methods</h3>
-
-      <p>This is a description about the section of information.</p>
-
-      <ul>
-        <li>
-          <a href="#" title="">Link title here</a>
-        </li>
-      </ul>
-    </div>
-    </div>
-
-    <div class="resources-resource">
-      <div class="resources-resource-content">
-      <h3>Brewing Methods</h3>
-
-      <p>This is a description about the section of information.</p>
-
-      <ul>
-        <li>
-          <a href="#" title="">Link title here</a>
-        </li>
-      </ul>
-    </div>
-    </div>
-
-    <div class="resources-resource">
-      <div class="resources-resource-content">
-      <h3>Brewing Methods</h3>
-
-      <p>This is a description about the section of information.</p>
-
-      <ul>
-        <li>
-          <a href="#" title="">Link title here</a>
-        </li>
-      </ul>
-    </div>
-    </div>
-  </div>
-</section>

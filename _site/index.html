@@ -116,156 +116,348 @@
 </div>
 
 
-  <!--
-  Working with resources:
-    1.  In the YAML, specify which resources we want to include:
+  <section class="container" data-page-section>
+    <header class="resources-header">
+      <h1>Resources</h1>
 
-          resources:
-            - general
-            - brewing
-            - methods
-            - ...etc
+      <p>This is a high-level description of the topic at hand. A few sentences describing what our subject is and a little history on the subject.</p>
 
-        We can then loop over this list and output each of the resources into
-        the correct layout
+      <aside class="squiggle"></aside>
+    </header>
 
-        Alternatively, we could do something like:
+    <div class="resources">
+      
+        <div class="resources-resource">
+          <div class="resources-resource-content">
+            <h3>Book</h3>
 
-          resources:
-            - all
+            <p>This is a high-level description of the topic at hand. A few sentences describing what our subject is and a little history on the subject.</p>
 
-        Which would loop over every single resource (JSON file) and output them
-        into our template. (I'm not entirely sure how we might do this -- how do
-        I loop over every JSON file in the `_data/resources` directory?)
+            <ul>
+              
+                <li>
+                  <a href="#" title="" class="-external">
+                    Craft Coffee: A Manual
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="#" title="" class="-external">
+                    Blue Bottle Craft of Coffee
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="#" title="" class="-external">
+                    The Best of Jimseven
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="#" title="" class="-external">
+                    Coffeeography
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="#" title="" class="-external">
+                    What I Know About Running Coffee Shops
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="#" title="" class="-external">
+                    Brew: Better Coffee at Home
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="#" title="" class="-external">
+                    The Monk of Mokha
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="#" title="" class="-external">
+                    Coffee Atlas of Ethiopia
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="#" title="" class="-external">
+                    The Coffee Roasters Companion
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="#" title="" class="-external">
+                    The Professional Barista’s Handbook
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="#" title="" class="-external">
+                    Everything But Espresso
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="#" title="" class="-external">
+                    Dear Coffee Buyer
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="#" title="" class="-external">
+                    The Book of Roast
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="#" title="" class="-external">
+                    The Craft and Science of Coffee
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="#" title="" class="-external">
+                    The World Atlas of Coffee
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="#" title="" class="-external">
+                    Modulating the Flavor Profile of Coffee
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="#" title="" class="-external">
+                    Cat and Cloud
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="#" title="" class="-external">
+                    Coffee Sprudgecast
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="#" title="" class="-external">
+                    Sprudge
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="#" title="" class="-external">
+                    Roast Magazine
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="#" title="" class="-external">
+                    Barista Hustle
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="#" title="" class="-external">
+                    Brewing Coffee Manually
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="#" title="" class="-external">
+                    Barista Magazine Online
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="#" title="" class="-external">
+                    Crema
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="#" title="" class="-external">
+                    Caffeine Mag
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="#" title="" class="-external">
+                    Daily Coffee News
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="#" title="" class="-external">
+                    Standart
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="#" title="" class="-external">
+                    Fresh Cup
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="#" title="" class="-external">
+                    Drift
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="#" title="" class="-external">
+                    Barista Hustle
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="#" title="" class="-external">
+                    UC Davis Coffee Center
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="#" title="" class="-external">
+                    Chris Baca
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="#" title="" class="-external">
+                    Prima Coffee Equipment
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="#" title="" class="-external">
+                    Barista Hustle
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="#" title="" class="-external">
+                    James Hoffman
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="#" title="" class="-external">
+                    Tim Wendelboe
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="#" title="" class="-external">
+                    European Coffee Trip
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="#" title="" class="-external">
+                    Kurasu Kyoto
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="#" title="" class="-external">
+                    Prima Coffee Equipment
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="#" title="" class="-external">
+                    Kurasu Kyoto
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="#" title="" class="-external">
+                    Seattle Coffee Gear
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="#" title="" class="-external">
+                    Specialty Turkish Coffee
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="#" title="" class="-external">
+                    European Coffee Trip
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="#" title="" class="-external">
+                    Specialty Turkish Coffee
+                  </a>
+                </li>
+              </ul>
+          </div>
+        </div>
+      <div class="resources-resource">
+        <div class="resources-resource-content">
+        <h3>Brewing Methods</h3>
 
-    2. For each resource 
--->
+        <p>This is a description about the section of information.</p>
 
-Craft Coffee: A Manual
-Blue Bottle Craft of Coffee
-The Best of Jimseven
-Coffeeography
-What I Know About Running Coffee Shops
-Brew: Better Coffee at Home
-The Monk of Mokha
-Coffee Atlas of Ethiopia
-The Coffee Roasters Companion
-The Professional Barista’s Handbook
-Everything But Espresso
-Dear Coffee Buyer
-The Book of Roast
-The Craft and Science of Coffee
-The World Atlas of Coffee
-Modulating the Flavor Profile of Coffee
-Cat and Cloud
-Coffee Sprudgecast
-Sprudge
-Roast Magazine
-Barista Hustle
-Brewing Coffee Manually
-Barista Magazine Online
-Crema
-Caffeine Mag
-Daily Coffee News
-Standart
-Fresh Cup
-Drift
-Barista Hustle
-UC Davis Coffee Center
-Chris Baca
-Prima Coffee Equipment
-Barista Hustle
-James Hoffman
-Tim Wendelboe
-European Coffee Trip
-Kurasu Kyoto
-Prima Coffee Equipment
-Kurasu Kyoto
-Seattle Coffee Gear
-Specialty Turkish Coffee
-European Coffee Trip
-Specialty Turkish Coffee
-<section class="container" data-page-section>
-  <header class="resources-header">
-    <h1>Hario v60</h1>
+        <ul>
+          <li>
+            <a href="#" title="">Link title here</a>
+          </li>
+        </ul>
+      </div>
+      </div>
 
-    <p>This is a high-level description of the topic at hand. A few sentences describing what our subject is and a little history on the subject.</p>
+      <div class="resources-resource">
+        <div class="resources-resource-content">
+        <h3>Brewing Methods</h3>
 
-    <aside class="squiggle"></aside>
-  </header>
+        <p>This is a description about the section of information.</p>
 
-  <div class="resources">
-    <div class="resources-resource">
-      <div class="resources-resource-content">
-      <h3>The Basics</h3>
+        <ul>
+          <li>
+            <a href="#" title="">Link title here</a>
+          </li>
+        </ul>
+      </div>
+      </div>
 
-      <p>This is a description about the section of information.</p>
+      <div class="resources-resource">
+        <div class="resources-resource-content">
+        <h3>Brewing Methods</h3>
 
-      <ul>
-        <li>
-          <a href="#" title="" class="-external">Link title here</a>
-        </li>
-      </ul>
+        <p>This is a description about the section of information.</p>
+
+        <ul>
+          <li>
+            <a href="#" title="">Link title here</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+
+      <div class="resources-resource">
+        <div class="resources-resource-content">
+        <h3>Brewing Methods</h3>
+
+        <p>This is a description about the section of information.</p>
+
+        <ul>
+          <li>
+            <a href="#" title="">Link title here</a>
+          </li>
+        </ul>
+      </div>
+      </div>
     </div>
-    </div>
-
-    <div class="resources-resource">
-      <div class="resources-resource-content">
-      <h3>Brewing Methods</h3>
-
-      <p>This is a description about the section of information.</p>
-
-      <ul>
-        <li>
-          <a href="#" title="">Link title here</a>
-        </li>
-      </ul>
-    </div>
-    </div>
-
-    <div class="resources-resource">
-      <div class="resources-resource-content">
-      <h3>Brewing Methods</h3>
-
-      <p>This is a description about the section of information.</p>
-
-      <ul>
-        <li>
-          <a href="#" title="">Link title here</a>
-        </li>
-      </ul>
-    </div>
-    </div>
-
-    <div class="resources-resource">
-      <div class="resources-resource-content">
-      <h3>Brewing Methods</h3>
-
-      <p>This is a description about the section of information.</p>
-
-      <ul>
-        <li>
-          <a href="#" title="">Link title here</a>
-        </li>
-      </ul>
-    </div>
-    </div>
-
-    <div class="resources-resource">
-      <div class="resources-resource-content">
-      <h3>Brewing Methods</h3>
-
-      <p>This is a description about the section of information.</p>
-
-      <ul>
-        <li>
-          <a href="#" title="">Link title here</a>
-        </li>
-      </ul>
-    </div>
-    </div>
-  </div>
-</section>
+  </section>
 
 
 

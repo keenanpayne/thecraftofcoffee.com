@@ -1,266 +1,273 @@
-[
- {
-   "Name": "Craft Coffee: A Manual",
-   "URL": "https://www.agatepublishing.com/titles/craft-coffee-a-manual",
-   "Type": "Book",
-   "Group": ""
- },
- {
-   "Name": "Blue Bottle Craft of Coffee",
-   "URL": "https://bluebottlecoffee.com/store/blue-bottle-craft-of-coffee",
-   "Type": "Book",
-   "Group": ""
- },
- {
-   "Name": "The Best of Jimseven",
-   "URL": "https://jimseven.myshopify.com/products/the-best-of-jimseven-ebook",
-   "Type": "Book",
-   "Group": ""
- },
- {
-   "Name": "Coffeeography",
-   "URL": "https://www.dropcoffee.com/products/coffeeography-the-coffee-producers",
-   "Type": "Book",
-   "Group": ""
- },
- {
-   "Name": "What I Know About Running Coffee Shops",
-   "URL": "https://whatiknowaboutrunningcoffeeshops.com/",
-   "Type": "Book",
-   "Group": ""
- },
- {
-   "Name": "Brew: Better Coffee at Home",
-   "URL": "https://wandpdesign.com/products/brew",
-   "Type": "Book",
-   "Group": ""
- },
- {
-   "Name": "The Monk of Mokha",
-   "URL": "https://www.penguinrandomhouse.com/books/534987/the-monk-of-mokha-by-dave-eggers/9781101947319/",
-   "Type": "Book",
-   "Group": ""
- },
- {
-   "Name": "Coffee Atlas of Ethiopia",
-   "URL": "https://store.sca.coffee/collections/books/products/coffee-atlas-of-ethiopia?variant=8152380178534",
-   "Type": "Book",
-   "Group": ""
- },
- {
-   "Name": "The Coffee Roasters Companion",
-   "URL": "https://www.scottrao.com/products/coffee-roasters-companion",
-   "Type": "Book",
-   "Group": ""
- },
- {
-   "Name": "The Professional Barista’s Handbook",
-   "URL": "https://www.scottrao.com/products/professional-baristas-handbook",
-   "Type": "Book",
-   "Group": ""
- },
- {
-   "Name": "Everything But Espresso",
-   "URL": "https://www.scottrao.com/products/everything-but-espresso",
-   "Type": "Book",
-   "Group": ""
- },
- {
-   "Name": "Dear Coffee Buyer",
-   "URL": "https://www.scottrao.com/products/dear-coffee-buyer",
-   "Type": "Book",
-   "Group": ""
- },
- {
-   "Name": "The Book of Roast",
-   "URL": "https://store.sca.coffee/collections/books/products/the-book-of-roast?variant=48426517702",
-   "Type": "Book",
-   "Group": ""
- },
- {
-   "Name": "The Craft and Science of Coffee",
-   "URL": "https://store.sca.coffee/collections/books/products/the-craft-and-science-of-coffee?variant=42057480390",
-   "Type": "Book",
-   "Group": ""
- },
- {
-   "Name": "The World Atlas of Coffee",
-   "URL": "http://www.theworldatlasofcoffee.com/",
-   "Type": "Book",
-   "Group": ""
- },
- {
-   "Name": "Modulating the Flavor Profile of Coffee",
-   "URL": "https://store.sca.coffee/collections/books/products/modulating-the-flavor-profile-of-coffee-by-bob-hoos?variant=14266326086",
-   "Type": "Book",
-   "Group": ""
- },
- {
-   "Name": "Cat and Cloud",
-   "URL": "https://catandcloud.com/pages/podcast",
-   "Type": "Podcast",
-   "Group": ""
- },
- {
-   "Name": "Coffee Sprudgecast",
-   "URL": "https://itunes.apple.com/us/podcast/coffee-sprudgecast/id1080551590?mt=2",
-   "Type": "Podcast",
-   "Group": ""
- },
- {
-   "Name": "Sprudge",
-   "URL": "https://sprudge.com/",
-   "Type": "Website",
-   "Group": ""
- },
- {
-   "Name": "Roast Magazine",
-   "URL": "https://www.roastmagazine.com/",
-   "Type": "Website, Magazine",
-   "Group": ""
- },
- {
-   "Name": "Barista Hustle",
-   "URL": "https://baristahustle.com/blog/",
-   "Type": "Blog",
-   "Group": ""
- },
- {
-   "Name": "Brewing Coffee Manually",
-   "URL": "http://www.manualcoffeebrewing.com/",
-   "Type": "Blog",
-   "Group": ""
- },
- {
-   "Name": "Barista Magazine Online",
-   "URL": "https://www.baristamagazine.com/",
-   "Type": "Website, Magazine",
-   "Group": ""
- },
- {
-   "Name": "Crema",
-   "URL": "https://magazine.crema.co/",
-   "Type": "Blog",
-   "Group": ""
- },
- {
-   "Name": "Caffeine Mag",
-   "URL": "https://caffeinemag.com/",
-   "Type": "Blog",
-   "Group": ""
- },
- {
-   "Name": "Daily Coffee News",
-   "URL": "https://dailycoffeenews.com/",
-   "Type": "Blog",
-   "Group": ""
- },
- {
-   "Name": "Standart",
-   "URL": "https://standartmag.com/",
-   "Type": "Magazine",
-   "Group": ""
- },
- {
-   "Name": "Fresh Cup",
-   "URL": "https://www.freshcup.com/",
-   "Type": "Magazine",
-   "Group": ""
- },
- {
-   "Name": "Drift",
-   "URL": "https://driftmag.com/",
-   "Type": "Magazine",
-   "Group": ""
- },
- {
-   "Name": "Barista Hustle",
-   "URL": "https://baristahustle.com/education-products/",
-   "Type": "Classes",
-   "Group": ""
- },
- {
-   "Name": "UC Davis Coffee Center",
-   "URL": "https://coffeecenter.ucdavis.edu/",
-   "Type": "Higher Education",
-   "Group": ""
- },
- {
-   "Name": "Chris Baca",
-   "URL": "https://www.youtube.com/channel/UCvHTmlCbEhgDvC5VdpVAG2A/featured",
-   "Type": "YouTube Channel",
-   "Group": ""
- },
- {
-   "Name": "Prima Coffee Equipment",
-   "URL": "https://www.youtube.com/user/primacoffeeequipment",
-   "Type": "YouTube Channel",
-   "Group": ""
- },
- {
-   "Name": "Barista Hustle",
-   "URL": "https://www.youtube.com/channel/UCJU9iETMJiodV65F9U9M8jA",
-   "Type": "YouTube Channel",
-   "Group": ""
- },
- {
-   "Name": "James Hoffman",
-   "URL": "https://www.youtube.com/channel/UCMb0O2CdPBNi-QqPk5T3gsQ",
-   "Type": "YouTube Channel",
-   "Group": ""
- },
- {
-   "Name": "Tim Wendelboe",
-   "URL": "https://www.youtube.com/channel/UCCyw4GaWJHezSUowFJ_uH0A",
-   "Type": "YouTube Channel",
-   "Group": ""
- },
- {
-   "Name": "European Coffee Trip",
-   "URL": "https://www.youtube.com/user/EuropeanCoffeeTrip",
-   "Type": "YouTube Channel",
-   "Group": ""
- },
- {
-   "Name": "Kurasu Kyoto",
-   "URL": "https://www.instagram.com/kurasu.kyoto/",
-   "Type": "Instagram",
-   "Group": ""
- },
- {
-   "Name": "Prima Coffee Equipment",
-   "URL": "https://prima-coffee.com/",
-   "Type": "Online Store",
-   "Group": ""
- },
- {
-   "Name": "Kurasu Kyoto",
-   "URL": "https://kurasu.kyoto/",
-   "Type": "Online Store",
-   "Group": ""
- },
- {
-   "Name": "Seattle Coffee Gear",
-   "URL": "https://www.seattlecoffeegear.com/",
-   "Type": "Online Store",
-   "Group": ""
- },
- {
-   "Name": "Specialty Turkish Coffee",
-   "URL": "https://www.specialtyturkishcoffee.com/",
-   "Type": "Online Store",
-   "Group": ""
- },
- {
-   "Name": "European Coffee Trip",
-   "URL": "https://europeancoffeetrip.com/",
-   "Type": "Traveling",
-   "Group": ""
- },
- {
-   "Name": "Specialty Turkish Coffee",
-   "URL": "https://www.instagram.com/specialtyturk/",
-   "Type": "Instagram",
-   "Group": ""
- }
-]
+[{
+	"name": "Resources",
+	"description": "This is a high-level description of the topic at hand. A few sentences describing what our subject is and a little history on the subject.",
+	"sections": [{
+		"name": "Book",
+		"description": "This is a high-level description of the topic at hand. A few sentences describing what our subject is and a little history on the subject.",
+		"items": [{
+				"name": "Craft Coffee: A Manual",
+				"url": "https://www.agatepublishing.com/titles/craft-coffee-a-manual",
+				"type": "Book",
+				"group": ""
+			},
+			{
+				"name": "Blue Bottle Craft of Coffee",
+				"url": "https://bluebottlecoffee.com/store/blue-bottle-craft-of-coffee",
+				"type": "Book",
+				"group": ""
+			},
+			{
+				"name": "The Best of Jimseven",
+				"url": "https://jimseven.myshopify.com/products/the-best-of-jimseven-ebook",
+				"type": "Book",
+				"group": ""
+			},
+			{
+				"name": "Coffeeography",
+				"url": "https://www.dropcoffee.com/products/coffeeography-the-coffee-producers",
+				"type": "Book",
+				"group": ""
+			},
+			{
+				"name": "What I Know About Running Coffee Shops",
+				"url": "https://whatiknowaboutrunningcoffeeshops.com/",
+				"type": "Book",
+				"group": ""
+			},
+			{
+				"name": "Brew: Better Coffee at Home",
+				"url": "https://wandpdesign.com/products/brew",
+				"type": "Book",
+				"group": ""
+			},
+			{
+				"name": "The Monk of Mokha",
+				"url": "https://www.penguinrandomhouse.com/books/534987/the-monk-of-mokha-by-dave-eggers/9781101947319/",
+				"type": "Book",
+				"group": ""
+			},
+			{
+				"name": "Coffee Atlas of Ethiopia",
+				"url": "https://store.sca.coffee/collections/books/products/coffee-atlas-of-ethiopia?variant=8152380178534",
+				"type": "Book",
+				"group": ""
+			},
+			{
+				"name": "The Coffee Roasters Companion",
+				"url": "https://www.scottrao.com/products/coffee-roasters-companion",
+				"type": "Book",
+				"group": ""
+			},
+			{
+				"name": "The Professional Barista’s Handbook",
+				"url": "https://www.scottrao.com/products/professional-baristas-handbook",
+				"type": "Book",
+				"group": ""
+			},
+			{
+				"name": "Everything But Espresso",
+				"url": "https://www.scottrao.com/products/everything-but-espresso",
+				"type": "Book",
+				"group": ""
+			},
+			{
+				"name": "Dear Coffee Buyer",
+				"url": "https://www.scottrao.com/products/dear-coffee-buyer",
+				"type": "Book",
+				"group": ""
+			},
+			{
+				"name": "The Book of Roast",
+				"url": "https://store.sca.coffee/collections/books/products/the-book-of-roast?variant=48426517702",
+				"type": "Book",
+				"group": ""
+			},
+			{
+				"name": "The Craft and Science of Coffee",
+				"url": "https://store.sca.coffee/collections/books/products/the-craft-and-science-of-coffee?variant=42057480390",
+				"type": "Book",
+				"group": ""
+			},
+			{
+				"name": "The World Atlas of Coffee",
+				"url": "http://www.theworldatlasofcoffee.com/",
+				"type": "Book",
+				"group": ""
+			},
+			{
+				"name": "Modulating the Flavor Profile of Coffee",
+				"url": "https://store.sca.coffee/collections/books/products/modulating-the-flavor-profile-of-coffee-by-bob-hoos?variant=14266326086",
+				"type": "Book",
+				"group": ""
+			},
+			{
+				"name": "Cat and Cloud",
+				"url": "https://catandcloud.com/pages/podcast",
+				"type": "Podcast",
+				"group": ""
+			},
+			{
+				"name": "Coffee Sprudgecast",
+				"url": "https://itunes.apple.com/us/podcast/coffee-sprudgecast/id1080551590?mt=2",
+				"type": "Podcast",
+				"group": ""
+			},
+			{
+				"name": "Sprudge",
+				"url": "https://sprudge.com/",
+				"type": "Website",
+				"group": ""
+			},
+			{
+				"name": "Roast Magazine",
+				"url": "https://www.roastmagazine.com/",
+				"type": "Website, Magazine",
+				"group": ""
+			},
+			{
+				"name": "Barista Hustle",
+				"url": "https://baristahustle.com/blog/",
+				"type": "Blog",
+				"group": ""
+			},
+			{
+				"name": "Brewing Coffee Manually",
+				"url": "http://www.manualcoffeebrewing.com/",
+				"type": "Blog",
+				"group": ""
+			},
+			{
+				"name": "Barista Magazine Online",
+				"url": "https://www.baristamagazine.com/",
+				"type": "Website, Magazine",
+				"group": ""
+			},
+			{
+				"name": "Crema",
+				"url": "https://magazine.crema.co/",
+				"type": "Blog",
+				"group": ""
+			},
+			{
+				"name": "Caffeine Mag",
+				"url": "https://caffeinemag.com/",
+				"type": "Blog",
+				"group": ""
+			},
+			{
+				"name": "Daily Coffee News",
+				"url": "https://dailycoffeenews.com/",
+				"type": "Blog",
+				"group": ""
+			},
+			{
+				"name": "Standart",
+				"url": "https://standartmag.com/",
+				"type": "Magazine",
+				"group": ""
+			},
+			{
+				"name": "Fresh Cup",
+				"url": "https://www.freshcup.com/",
+				"type": "Magazine",
+				"group": ""
+			},
+			{
+				"name": "Drift",
+				"url": "https://driftmag.com/",
+				"type": "Magazine",
+				"group": ""
+			},
+			{
+				"name": "Barista Hustle",
+				"url": "https://baristahustle.com/education-products/",
+				"type": "Classes",
+				"group": ""
+			},
+			{
+				"name": "UC Davis Coffee Center",
+				"url": "https://coffeecenter.ucdavis.edu/",
+				"type": "Higher Education",
+				"group": ""
+			},
+			{
+				"name": "Chris Baca",
+				"url": "https://www.youtube.com/channel/UCvHTmlCbEhgDvC5VdpVAG2A/featured",
+				"type": "YouTube Channel",
+				"group": ""
+			},
+			{
+				"name": "Prima Coffee Equipment",
+				"url": "https://www.youtube.com/user/primacoffeeequipment",
+				"type": "YouTube Channel",
+				"group": ""
+			},
+			{
+				"name": "Barista Hustle",
+				"url": "https://www.youtube.com/channel/UCJU9iETMJiodV65F9U9M8jA",
+				"type": "YouTube Channel",
+				"group": ""
+			},
+			{
+				"name": "James Hoffman",
+				"url": "https://www.youtube.com/channel/UCMb0O2CdPBNi-QqPk5T3gsQ",
+				"type": "YouTube Channel",
+				"group": ""
+			},
+			{
+				"name": "Tim Wendelboe",
+				"url": "https://www.youtube.com/channel/UCCyw4GaWJHezSUowFJ_uH0A",
+				"type": "YouTube Channel",
+				"group": ""
+			},
+			{
+				"name": "European Coffee Trip",
+				"url": "https://www.youtube.com/user/EuropeanCoffeeTrip",
+				"type": "YouTube Channel",
+				"group": ""
+			},
+			{
+				"name": "Kurasu Kyoto",
+				"url": "https://www.instagram.com/kurasu.kyoto/",
+				"type": "Instagram",
+				"group": ""
+			},
+			{
+				"name": "Prima Coffee Equipment",
+				"url": "https://prima-coffee.com/",
+				"type": "Online Store",
+				"group": ""
+			},
+			{
+				"name": "Kurasu Kyoto",
+				"url": "https://kurasu.kyoto/",
+				"type": "Online Store",
+				"group": ""
+			},
+			{
+				"name": "Seattle Coffee Gear",
+				"url": "https://www.seattlecoffeegear.com/",
+				"type": "Online Store",
+				"group": ""
+			},
+			{
+				"name": "Specialty Turkish Coffee",
+				"url": "https://www.specialtyturkishcoffee.com/",
+				"type": "Online Store",
+				"group": ""
+			},
+			{
+				"name": "European Coffee Trip",
+				"url": "https://europeancoffeetrip.com/",
+				"type": "Traveling",
+				"group": ""
+			},
+			{
+				"name": "Specialty Turkish Coffee",
+				"url": "https://www.instagram.com/specialtyturk/",
+				"type": "Instagram",
+				"group": ""
+			}
+		]
+	}]
+}]
