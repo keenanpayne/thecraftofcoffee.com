@@ -17,11 +17,14 @@
 
           <ul>
             {% for item in section.items %}
-              <li>
-                <a href="#" title="" class="-external">
-                  {{ item.name }}
-                </a>
-              </li>
+              {# Limit ourselves to 5 items #}
+              {% if loop.index <= 5 %}
+                <li>
+                  <a href="#" title="" class="-external">
+                    {{ item.name }}
+                  </a>
+                </li>
+              {% endif -%}
             {% endfor -%}
           </ul>
         </div>

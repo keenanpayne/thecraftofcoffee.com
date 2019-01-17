@@ -2,7 +2,7 @@
 	"name": "Resources",
 	"description": "Necessary description here",
 	"sections": [{
-		"name": "Book",
+		"name": "Books",
 		"description": "",
 		"items": [{
 				"name": "Craft Coffee: A Manual",
@@ -86,7 +86,7 @@
 			}
 		]
 	}, {
-		"name": "Podcast",
+		"name": "Podcasts",
 		"description": "",
 		"items": [{
 				"name": "Cat and Cloud",
@@ -100,7 +100,7 @@
 			}
 		]
 	}, {
-		"name": "Website",
+		"name": "Websites",
 		"description": "",
 		"items": [{
 				"name": "Sprudge",
