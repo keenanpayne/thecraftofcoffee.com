@@ -1,18 +1,18 @@
 <!doctype html>
 <html lang="en" class="-bordered-wide">
 <head>
-  {% include "globals/meta.html" %}
+  {% include "globals/meta.njk" %}
 </head>
 
 <body>
   {# Macros #}
-  {% import "globals/navigation.html" as navigation with context %}
+  {% import "globals/navigation.njk" as navigation with context %}
 
   {# Includes #}
-  {% include "globals/header.html" %}
+  {% include "globals/header.njk" %}
 
-  {% include "globals/main.html" %}
+  {% include "globals/main.njk" %}
 
-  {% include "globals/footer.html" %}
+  {% include "globals/footer.njk" %}
 </body>
 </html>

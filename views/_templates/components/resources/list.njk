@@ -1,0 +1,31 @@
+<section class="container" data-page-section>
+  <header class="resources-header">
+    <h1>{{ topic.name }}</h1>
+
+    <p>{{ topic.description }}</p>
+
+    <aside class="squiggle"></aside>
+  </header>
+
+  <div class="resources">
+    {% for section in topic.sections %}
+      <div class="resources-resource">
+        <div class="resources-resource-content">
+          <h3>{{ section.name }}</h3>
+
+          <p>{{ section.description }}</p>
+
+          <ul>
+            {% for item in section.items %}
+              <li>
+                <a href="#" title="" class="-external">
+                  {{ item.name }}
+                </a>
+              </li>
+            {% endfor -%}
+          </ul>
+        </div>
+      </div>
+    {% endfor -%}
+  </div>
+</section>
