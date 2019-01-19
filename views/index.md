@@ -7,7 +7,8 @@ title: "Home"
 sections:
   - masthead
   - homepage-description
-  - resources
+  - resource-highlights
+  #- resources
 
 masthead: For the love of craft coffee
 
