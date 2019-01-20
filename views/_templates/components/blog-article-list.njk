@@ -1,6 +1,6 @@
 {% import "templates/article.njk" as article with context %}
 
-<div class="container" data-page-section>
+<section class="container" data-page-section>
   <div class="blogArticleList">
     {%- for post in collections.post -%}
       <article class="article">
@@ -34,4 +34,4 @@
       {% endif %}
     {%- endfor -%}
   </div>
-</div>
+</section>
