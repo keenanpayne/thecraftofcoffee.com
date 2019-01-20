@@ -1,0 +1,22 @@
+//
+// About
+// =============================================================================
+
+.about {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  max-width: 67%;
+  padding-bottom: spacing(40);
+  padding-top: spacing(40);
+}
+
+.about-content {
+  max-width: 525px;
+}
+
+.about-image {
+  box-shadow: spacing(2) spacing(2) 0 getColor(bg, light);
+  height: 250px;
+  width: 250px;
+}

@@ -6,6 +6,8 @@ layout: default
   {% include "components/" + section + ".njk" %}
 {% endfor %}
 
-<div class="container">
-  {{ content | safe }}
-</div>
+{% if content %}
+  <div class="container">
+    {{ content | safe }}
+  </div>
+{% endif %}

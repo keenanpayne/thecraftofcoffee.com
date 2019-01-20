@@ -1,0 +1,13 @@
+<section class="container about">
+  <div class="about-content">
+    {% if about_headline %}
+      <h2>{{ about_headline }}</h2>
+    {% endif %}
+
+    {% if about_text %}
+      <p>{{ about_text }}</p>
+    {% endif %}
+  </div>
+
+  <img class="about-image" src="/dist/images/hello-friends.jpg" alt="">
+</section>

@@ -25,7 +25,11 @@
   // Descendants
   // -----------
 
-  p {
+  > small {
+    display: block;
+  }
+
+  > p {
     margin-bottom: 0;
     margin-top: 0;
 
@@ -33,4 +37,9 @@
       margin-bottom: spacing(5);
     }
   }
+}
+
+// Fixing emoji alignment
+.g-footer-emoji {
+  margin-right: -4px;
 }
