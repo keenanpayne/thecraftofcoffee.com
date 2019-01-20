@@ -1,7 +1,15 @@
 <div class="masthead" data-page-section>
   {% if masthead %}
-    <h2 class="masthead-text" data-text="{{ masthead }}">
-      {{ masthead }}
-    </h2>
+    <h1 class="masthead-text" data-text="{{ masthead }}">
+      <span>
+        {{ masthead }}
+      </span>
+    </h1>
+  {% endif %}
+
+  {% if masthead_credit_name %}
+    <span class="masthead-credit">
+      Photo by <a href="{{ masthead_credit_url }}" title="Coffee photo by {{ masthead_credit_name }}">{{ masthead_credit_name }}</a>
+    </span>
   {% endif %}
 </div>

@@ -32,8 +32,23 @@
   font-size: 5.5rem;
   font-style: italic;
   font-weight: 900;
-  max-width: 525px;
   line-height: .85;
+  margin-bottom: 0;
+  margin-top: 0;
+  text-align: right;
   text-transform: lowercase;
-  transform: translate(-15px, 50px);
+  transform: translate(15px, 44px);
+  width: 100%;
+
+  > span {
+    display: inline-block;
+    max-width: 525px;
+  }
+}
+
+.masthead-credit {
+  bottom: spacing(2);
+  font-size: typeScale(1);
+  left: spacing(2);
+  position: absolute;
 }

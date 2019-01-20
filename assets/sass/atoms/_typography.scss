@@ -18,14 +18,20 @@ body {
   color: getColor(type, base);
   font-family: $font-primary;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.45;
 }
 
 p {
+
+
   font-size: 1.1rem;
   margin-bottom: 1.3rem;
 
   // Modifiers
+  &.-xl {
+    font-size: typeScale(3);
+  }
+
   &.-highlight {
     background-image: linear-gradient(-100deg, hsla(58, 92%, 75%, .3),
                                                hsla(58, 92%, 75%, .7) 95%,

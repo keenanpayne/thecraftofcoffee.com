@@ -15,7 +15,10 @@ $assets-images: '../dist/images/';
 
 // Primary fonts
 $font-primary: trade-gothic-next, Helvetica, Arial, sans-serif;
-$font-secondary: miller-headline, serif;
+$font-secondary: miller-headline, Times, Georgia, serif;
+// TODO: Not sure if keeping this font. I like it, it's different.
+//       I'm not sure how it fits into the overall typography though.
+$font-tertiary: nimbus-sans-extended, Helvetica, arial sans-serif;
 
 // Logo fonts
 $font-logo-primary: 'Bungee Shade', serif;
