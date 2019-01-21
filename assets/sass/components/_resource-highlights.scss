@@ -3,8 +3,10 @@
 // =============================================================================
 
 .resourceHighlights {
-  display: flex;
-  justify-content: center;
+  @media (min-width: $media-min-768) {
+    display: flex;
+    justify-content: center;
+  }
 
 
   //
@@ -27,7 +29,6 @@
         background-color: getColor(bg, light);
         box-shadow: 0 5px 5px -5px rgba(34, 43, 55, .35);
         color: getColor(type, base);
-        transform: scale(1.1);
 
         h3 {
           color: getColor(type, base);
@@ -36,6 +37,12 @@
 
       h3 {
         color: getColor(type, inverted);
+      }
+
+      @media (min-width: $media-min-960) {
+        &:hover {
+          transform: scale(1.1);
+        }
       }
     }
   }
@@ -49,9 +56,16 @@
 //       look nice.
 //
 .resourceHighlights-item {
-  max-width: 25%;
   padding: 50px;
   transition: all .5s cubic-bezier(.165, .84, .44, 1);
+
+  @media (min-width: $media-min-768) {
+    max-width: 33.33%;
+  }
+
+  @media (min-width: $media-min-960) {
+    max-width: 25%;
+  }
 
   &:not(:last-of-type) {
     border-right: 1px solid getColor(bg, dark);

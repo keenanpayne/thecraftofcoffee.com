@@ -3,20 +3,47 @@
 // =============================================================================
 
 .about {
-  align-items: center;
   display: flex;
-  justify-content: space-around;
-  max-width: 67%;
-  padding-bottom: spacing(40);
-  padding-top: spacing(40);
+  flex-direction: column;
+  padding-bottom: spacing(20);
+  padding-top: spacing(20);
+
+  @media (min-width: $media-min-768) {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: spacing(30);
+    padding-top: spacing(30);
+  }
+
+  @media (min-width: $media-min-960) {
+    max-width: 875px;
+  }
+
+  @media (min-width: $media-min-1120) {
+    padding-bottom: spacing(40);
+    padding-top: spacing(40);
+  }
 }
 
 .about-content {
   max-width: 525px;
+
+  @media (min-width: $media-min-768) {
+    margin-right: spacing(10);
+  }
 }
 
 .about-image {
   box-shadow: spacing(2) spacing(2) 0 getColor(bg, light);
   height: 250px;
+  margin-bottom: spacing(5);
+  order: -1;
   width: 250px;
+
+  @media (min-width: $media-min-768) {
+    margin-bottom: 0;
+    order: 1;
+  }
 }
