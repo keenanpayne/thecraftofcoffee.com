@@ -5,15 +5,16 @@
 .resources {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: -($spacing-section / 2);
 }
 
 .resources-header {
-  margin-bottom: ($spacing-section / 2);
-  max-width: 700px;
+  text-align: center;
 
   > p {
     margin-bottom: ($spacing-section / 2);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px;
   }
 }
 
@@ -23,14 +24,15 @@
 // -------------------
 
 .resources-resource {
-  margin-bottom: ($spacing-section / 2);
+  flex-basis: 100%;
+  margin-top: ($spacing-section / 2);
 
   @media (min-width: $media-min-480) {
-    width: 50%;
+    flex-basis: 50%;
   }
 
   @media (min-width: $media-min-960) {
-    width: 33.333%;
+    flex-basis: 33.333%;
   }
 }
 

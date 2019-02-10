@@ -30,16 +30,16 @@
   }
 
   > p {
-    margin-bottom: 0;
+    margin-bottom: spacing(5);
     margin-top: 0;
 
-    @media (max-width: $media-max-767) {
-      margin-bottom: spacing(5);
+    @media (min-width: $media-min-768) {
+      margin-bottom: 0;
     }
   }
 }
 
 // Fixing emoji alignment
 .g-footer-emoji {
-  margin-right: -4px;
+  margin-left: 3px;
 }
