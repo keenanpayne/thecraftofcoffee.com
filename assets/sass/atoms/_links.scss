@@ -20,19 +20,14 @@ a {
   // Content links
   p &,
   ul & {
-    background: linear-gradient(to bottom, black 0%, black 100%) bottom no-repeat;
-    background-position: 0 100%;
-    background-repeat: repeat-x;
-    background-size: 100% 2px;
-    transition: background-size $transition-medium;
+    text-decoration: underline;
 
     &:hover {
-      background-size: 100% 100%;
-      color: getColor(type, inverted);
+      background-color: black;
+      color: white;
       text-decoration: none;
     }
   }
-
 
   // Underline
   &.-underline {

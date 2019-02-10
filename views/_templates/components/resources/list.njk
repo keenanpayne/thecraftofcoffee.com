@@ -9,25 +9,33 @@
 
   <div class="resources">
     {% for section in topic.sections %}
-      <div class="resources-resource">
-        <div class="resources-resource-content">
-          <h3>{{ section.name }}</h3>
+      <div class="resources-section">
+        <h2>{{ section.name }}</h2>
 
-          <p>{{ section.description }}</p>
+        <p>{{ section.description }}</p>
 
-          <ul>
-            {% for item in section.items %}
-              {# Limit ourselves to 5 items #}
-              {% if loop.index <= 5 %}
-                <li>
-                  <a href="#" title="" class="-external">
-                    {{ item.name }}
-                  </a>
-                </li>
-              {% endif -%}
-            {% endfor -%}
-          </ul>
-        </div>
+        {% for item in section.items %}
+          {% if loop.first %}
+            {# Limit ourselves to 5 items #}
+            <ul
+              {% if loop.length > 10 %}
+                class="-column-third"
+              {% elif loop.length > 5 %}
+                class="-column-half"
+              {% endif %}
+            >
+          {% endif %}
+
+            <li>
+              <a href="{{ item.url }}" title="{{ item.name }}">
+                {{ item.name }}
+              </a>
+            </li>
+
+          {% if loop.last %}
+            </ul>
+          {% endif %}
+        {% endfor -%}
       </div>
     {% endfor -%}
   </div>

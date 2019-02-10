@@ -5,6 +5,8 @@
 .resources {
   display: flex;
   flex-wrap: wrap;
+  margin-left: -$spacing-section-half;
+  margin-right: -$spacing-section-half;
 }
 
 .resources-header {
@@ -23,21 +25,33 @@
 // Individual Resource
 // -------------------
 
-.resources-resource {
-  flex-basis: 100%;
+.resources-section {
+  margin-left: $spacing-section-half;
+  margin-right: $spacing-section-half;
   margin-top: ($spacing-section / 2);
+  min-width: 20%;
 
-  @media (min-width: $media-min-480) {
-    flex-basis: 50%;
-  }
+  ul {
+    @media (min-width: $media-min-768) {
+      white-space: nowrap;
+    }
 
-  @media (min-width: $media-min-960) {
-    flex-basis: 33.333%;
-  }
-}
+    // Modifiers
+    &.-column-half,
+    &.-column-third {
+      column-gap: $spacing-section-half;
 
-.resources-resource-content {
-  @media (min-width: $media-min-480) {
-    padding-right: spacing(10);
+      @media (min-width: $media-min-768) {
+        column-gap: $spacing-section;
+      }
+    }
+
+    &.-column-half {
+      column-count: 2;
+    }
+
+    &.-column-third {
+      column-count: 3;
+    }
   }
 }
