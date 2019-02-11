@@ -6,11 +6,12 @@
 // Mixins
 // ------
 
-@mixin link-flat {
+@mixin link-flat() {
   text-decoration: none;
 
   &:hover {
     background-color: none;
+    text-decoration: none;
   }
 }
 

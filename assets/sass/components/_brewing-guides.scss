@@ -2,30 +2,72 @@
 // Brewing Guides
 // =============================================================================
 
-.brewing {
-  @media (min-width: $media-min-768) {
-    display: flex;
-    justify-content: space-evenly;
+.guides {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: $spacing-section;
+
+  @media (min-width: $media-min-480) {
+    margin-left: 1px;
+    margin-left: 2px;
+  }
+}
+
+.guides-item {
+  @include link-flat();
+
+  align-items: center;
+  color: white;
+  display: flex;
+  height: 100vw;
+  justify-content: center;
+  margin: 0 1px 1px 1px;
+  text-align: center;
+  transition: filter $transition-short;
+  width: 100vw;
+
+  @media (min-width: $media-min-480) {
+    height: 50vw;
+    margin: 2px;
+    width: calc(50vw - 5px);
   }
 
-  img {
+  @media (min-width: $media-min-960) {
+    height: 30vw;
+    width: calc(33.33vw - 5px);
+  }
+
+  &:before {
+    background-color: rgba(0, 0, 0, .4);
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
     width: 100%;
   }
-}
 
-.brewing-guide {
-  &:not(:first-of-type) {
-    @media (min-width: $media-min-768) {
-      margin-left: 3rem;
-    }
+  &:hover {
+    filter: sepia(15%) grayscale(70%);
+  }
+
+  // Individual methods
+  &.-aeropress {
+    background: url('/dist/images/aeropress.jpg') no-repeat center center;
+    background-size: cover;
   }
 }
 
-.brewing-link {
-  float: right;
-}
+.guides-item-title {
+  color: white;
+  font-family: $font-tertiary;
+  font-weight: 400;
+  margin-bottom: 0;
+  margin-top: 0;
+  z-index: 1;
 
-.brewing-all {
-  margin-top: 2.5rem;
-  text-align: center;
+  @media (min-width: $media-min-960) {
+    font-size: typeScale(6);
+  }
 }
