@@ -32,10 +32,6 @@
   min-width: 20%;
 
   ul {
-    @media (min-width: $media-min-768) {
-      white-space: nowrap;
-    }
-
     // Modifiers
     &.-column-half,
     &.-column-third {

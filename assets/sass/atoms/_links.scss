@@ -2,6 +2,23 @@
 // Links
 // =============================================================================
 
+//
+// Mixins
+// ------
+
+@mixin link-flat {
+  text-decoration: none;
+
+  &:hover {
+    background-color: none;
+  }
+}
+
+
+//
+// Styles
+// ------
+
 a {
   color: getColor(type, base);
   display: inline-block;
@@ -18,8 +35,7 @@ a {
   // ---------
 
   // Content links
-  p &,
-  ul & {
+  p & {
     text-decoration: underline;
 
     &:hover {

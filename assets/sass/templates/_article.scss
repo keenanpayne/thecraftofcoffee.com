@@ -3,6 +3,13 @@
 // =============================================================================
 
 .article {
+  ol,
+  ul {
+    @media (min-width: $media-min-480) {
+      max-width: 600px;
+    }
+  }
+
   // Style embedded images
   figure {
     @media (min-width: $media-min-768) {
@@ -55,11 +62,16 @@
   }
 
   h2 {
-    margin-top: typeScale(6)
+    margin-top: typeScale(6);
+
+    // Tighten this bad boy up so it doesn't seem like it's floating
+    + h3 {
+      margin-top: typeScale(2);
+    }
   }
 
   h3 {
-    margin-top: typeScale(4)
+    margin-top: typeScale(4);
   }
 
   p {
