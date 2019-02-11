@@ -41,7 +41,7 @@
     &.-column-third {
       column-gap: $spacing-section-half;
 
-      @media (min-width: $media-min-768) {
+      @media (min-width: $media-min-960) {
         column-gap: $spacing-section;
       }
     }

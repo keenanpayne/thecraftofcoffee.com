@@ -9,15 +9,13 @@
   flex-direction: column;
   justify-content: space-between;
   padding: spacing(5);
-
-  @media (max-width: $media-max-767) {
-    text-align: center;
-  }
+  text-align: center;
 
   @media (min-width: $media-min-768) {
     flex-direction: row;
     padding-bottom: spacing(10);
     padding-top: spacing(10);
+    text-align: left;
   }
 
 
