@@ -3,48 +3,12 @@
 // =============================================================================
 
 .resourceHighlights {
+  // Shout out: https://www.toptal.com/designers/subtlepatterns/just-waves-pattern/
+  background: url('https://luna1.co/dda890.png') repeat;
+
   @media (min-width: $media-min-768) {
     display: flex;
     justify-content: center;
-  }
-
-
-  //
-  // Modifiers
-  // ---------
-
-  // NOTE: Alternative skin for this component. I like both styles
-  //       but not sure which I like better (maybe A/B test)
-  &.-pop {
-    background-color: getColor(bg, dark);
-
-    .resourceHighlights-item {
-      color: getColor(type, inverted);
-
-      &:not(:last-of-type) {
-        border-right: none;
-      }
-
-      &:hover {
-        background-color: getColor(bg, light);
-        box-shadow: 0 5px 5px -5px rgba(34, 43, 55, .35);
-        color: getColor(type, base);
-
-        h3 {
-          color: getColor(type, base);
-        }
-      }
-
-      h3 {
-        color: getColor(type, inverted);
-      }
-
-      @media (min-width: $media-min-960) {
-        &:hover {
-          transform: scale(1.1);
-        }
-      }
-    }
   }
 }
 
@@ -67,12 +31,10 @@
     max-width: 25%;
   }
 
-  &:not(:last-of-type) {
-    border-right: 1px solid getColor(bg, dark);
-  }
-
   &:hover {
-    background-color: #f6f6f6;
+    background-color: #d9f4ff;
+    box-shadow: 0 5px 5px -5px rgba(34, 43, 55, .25);
+    color: getColor(type, base);
 
     a {
       opacity: 1;
@@ -83,6 +45,12 @@
         max-width: 100%;
         visibility: visible;
       }
+    }
+  }
+
+  @media (min-width: $media-min-960) {
+    &:hover {
+      transform: scale(1.1);
     }
   }
 
@@ -101,7 +69,7 @@
     font-weight: 600;
 
     &::after {
-      background-color: #74b49b;
+      background-color: white;
       content: '';
       display: block;
       height: 3px;

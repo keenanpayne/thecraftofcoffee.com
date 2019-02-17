@@ -14,11 +14,18 @@
   }
 }
 
+html {
+  font-family: $font-primary;
+
+  @supports (font-variation-settings: normal) {
+    font-family: $font-primary-var;
+  }
+}
+
 body {
   color: getColor(type, base);
-  font-family: $font-primary;
   font-weight: 400;
-  line-height: 1.45;
+  line-height: 1.55;
 }
 
 p {

@@ -14,15 +14,12 @@ $assets-images: '../dist/images/';
 // --------------------------------------------------
 
 // Primary fonts
-$font-primary: trade-gothic-next, Helvetica, Arial, sans-serif;
+$font-primary: 'Inter', Helvetica, Arial, sans-serif;
+$font-primary-var: 'Inter var', Helvetica, Arial, sans-serif;
 $font-secondary: miller-headline, Times, Georgia, serif;
 // TODO: Not sure if keeping this font. I like it, it's different.
 //       I'm not sure how it fits into the overall typography though.
 $font-tertiary: nimbus-sans-extended, Helvetica, arial sans-serif;
-
-// Logo fonts
-$font-logo-primary: 'Bungee Shade', serif;
-$font-logo-secondary: 'Vampiro One', Helvetica, Arial, sans-serif;
 
 
 //
@@ -41,7 +38,7 @@ $_perfect-fifth:    1.500 !default;
 $_golden-ratio:     1.618 !default;
 
 // Ratio for primary scale
-$scale-ratio: $_perfect-fourth !default;
+$scale-ratio: $_augmented-fourth !default;
 
 // Ratio for secondary scale
 $scale-ratio-secondary: $_perfect-fourth !default;
@@ -96,6 +93,10 @@ $colors: (
   bg: (
     "dark":     #303030,
     "light":    #f0f0f0
+  ),
+
+  brand: (
+    "slate":    #444f67
   )
 );
 
