@@ -3,10 +3,5 @@
 // =============================================================================
 
 .g-header {
-  @include container;
-
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
   padding: 2.5rem spacing(5);
 }

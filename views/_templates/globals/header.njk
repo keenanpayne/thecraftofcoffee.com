@@ -1,5 +1,5 @@
 <header class="g-header" role="banner">
-  {% include "globals/logo.njk" %}
+  {{ navigation.header() }}
 
-  {#{ navigation.output() }#}
+  {% include "globals/logo.njk" %}
 </header>
