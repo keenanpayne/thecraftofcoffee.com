@@ -4,4 +4,12 @@
       {{ page_title }}
     </h1>
   {% endif %}
+
+  {% if page_title %}
+    <p class="-xl">{{ page_description }}</p>
+  {% endif %}
+
+  {% if page_squiggle %}
+    <aside class="squiggle -center"></aside>
+  {% endif %}
 </div>
