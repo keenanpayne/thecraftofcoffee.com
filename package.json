@@ -5,7 +5,7 @@
   "description": "The website for The Craft of Coffee",
   "homepage": "https://thecraftofcoffee.com",
   "engines": {
-    "node": "<=11.4.0"
+    "node": "~10.13.0"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.6.0",
